@@ -1,0 +1,61 @@
+/* ShareButton.module.css */
+.shareButtonContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.shareButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shareButton:hover {
+  background-color: #45a049;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.shareOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shareOption a {
+  text-decoration: none;
+  color: inherit;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.shareOption a:hover {
+  background-color: #f0f0f0;
+}
+
+.shareOption svg {
+  transition: transform 0.3s ease;
+}
+
+.shareOption a:hover svg {
+  transform: scale(1.1);
+}

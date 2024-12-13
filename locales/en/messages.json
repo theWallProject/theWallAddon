@@ -1,0 +1,32 @@
+{
+  "extensionName": {
+    "message": "The wall - Boycott assistant 🇵🇸"
+  },
+  "extensionDescription": {
+    "message": "Put more than 17,000 Boycott-worthy companies behind a wall 🚫"
+  },
+  "headerTitle": {
+    "message": "The wall 🇵🇸"
+  },
+  "reasonUrlIL": {
+    "message": "This Url ends with .il, This means it's an Israeli 🇮🇱 website!"
+  },
+  "reasonFounder": {
+    "message": "One or more founders/investors of $1 are connected to Israel 🇮🇱"
+  },
+  "reasonHeadquarter": {
+    "message": "$1 headquarters is in Israel 🇮🇱"
+  },
+  "modalShareMobileImage": {
+    "message": "Share image"
+  },
+  "modalShareButton": {
+    "message": "Share"
+  },
+  "modalDismissSession": {
+    "message": "Allow this time"
+  },
+  "sharingMessageText": {
+    "message": "I detected an Israeli website using \"the wall\" browser addon. Try it!"
+  }
+}

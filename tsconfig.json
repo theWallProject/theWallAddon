@@ -1,0 +1,15 @@
+{
+  "extends": "plasmo/templates/tsconfig.base",
+  "exclude": ["node_modules"],
+  "include": [".plasmo/index.d.ts", "./**/*.ts", "./**/*.tsx"],
+  "compilerOptions": {
+    "strict": true,
+    // "moduleResolution": "node", // To resolve modules like Node.js
+    // "esModuleInterop": true,
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "~*": ["./src/*"]
+    },
+    "baseUrl": "."
+  }
+}
