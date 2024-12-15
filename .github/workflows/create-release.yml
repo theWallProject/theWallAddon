@@ -3,6 +3,11 @@ name: Create Release on Demand
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write # Allow creating and updating releases
+  id-token: write # Allow creating a release tag
+  pull-requests: read # Allow reading pull requests if needed (optional)
+
 jobs:
   create-release:
     runs-on: ubuntu-latest
