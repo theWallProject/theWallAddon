@@ -31,7 +31,7 @@ jobs:
         run: |
           # Use the version from package.json to create the release tag
           TAG_NAME="v${{ env.RELEASE_VERSION }}"
-          gh release create $TAG_NAME ./dist/*.zip --title "Release $TAG_NAME" --notes "Release created by GitHub Actions"
+          gh release create $TAG_NAME ./build/*.zip --title "Release $TAG_NAME" --notes "Release created by GitHub Actions"
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token for authentication
