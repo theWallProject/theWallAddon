@@ -44,6 +44,7 @@ jobs:
       - name: Upload release assets
         run: |
           # Upload all zip files in the dist folder
+          TAG_NAME="v${{ env.RELEASE_VERSION }}"
           for file in ./build/*.zip; do
             gh release upload $TAG_NAME "$file" --clobber
           done
