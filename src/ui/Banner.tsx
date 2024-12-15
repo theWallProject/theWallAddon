@@ -94,9 +94,7 @@ export const Banner = () => {
           <div className={style.buttonsWrapper}>
             <ShareButton
               text={chrome.i18n.getMessage("sharingMessageText")}
-              url={
-                "https://chromewebstore.google.com/detail/palestinepact/gengdkfcffpnjfolbcbhfiocemfinkem"
-              }
+              url={"https://thewallproject.github.io"}
             />
 
             <Button
