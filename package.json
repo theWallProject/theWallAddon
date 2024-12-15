@@ -1,6 +1,6 @@
 {
   "name": "@thewall/addon",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "theWall",
   "scripts": {
     "trans": "node --loader ts-node/esm TRANSLATIONS/generate.ts",
