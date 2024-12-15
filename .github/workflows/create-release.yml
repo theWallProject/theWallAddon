@@ -29,7 +29,7 @@ jobs:
         run: echo "RELEASE_VERSION=$(jq -r .version package.json)" >> $GITHUB_ENV
 
       - name: Build Plasmo addon
-        run: npm run package # Assuming this command creates the zip files in the 'dist' folder
+        run: npm run package
 
       - name: Create a new GitHub release
         id: create_release
@@ -39,11 +39,11 @@ jobs:
           gh release create $TAG_NAME ./build/*.zip --title "Release $TAG_NAME" --notes "Release created by GitHub Actions"
 
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token for authentication
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload release assets
         run: |
           # Upload all zip files in the dist folder
           for file in ./build/*.zip; do
-            gh release upload $TAG_NAME $file --clobber
+            gh release upload $TAG_NAME "$file" --clobber
           done
