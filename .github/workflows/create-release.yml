@@ -39,7 +39,7 @@ jobs:
           gh release create $TAG_NAME ./build/*.zip --title "Release $TAG_NAME" --notes "Release created by GitHub Actions"
 
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
 
       - name: Upload release assets
         run: |
@@ -48,3 +48,5 @@ jobs:
           for file in ./build/*.zip; do
             gh release upload $TAG_NAME "$file" --clobber
           done
+        env:
+          GH_TOKEN: ${{ github.token }}
