@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 
 // @ts-expect-error
 import backgroundImage from "../../assets/wall.jpg"
+// import { log, warn } from "../helpers"
 // import { share } from "../image_sharing/image"
 import { ShareButton } from "../share_button/ShareButton"
 import { MessageTypes, type Message, type MessageResponseMap } from "../types"
@@ -32,10 +33,12 @@ export const Banner = () => {
         setTestResult(message.result)
       }
     }
-
+    // log("inside use effect before adding listener")
     chrome.runtime.onMessage.addListener(listener)
 
     return () => {
+      // warn("removing use effect. removing listener")
+
       chrome.runtime.onMessage.removeListener(listener)
     }
   }, [])

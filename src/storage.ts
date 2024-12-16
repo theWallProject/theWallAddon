@@ -2,7 +2,7 @@ import FLAGGED_FB from "./db/FLAGGED_FACEBOOK.json"
 import FLAGGED_LI_COMPANY from "./db/FLAGGED_LI_COMPANY.json"
 import FLAGGED_TWITTER from "./db/FLAGGED_TWITTER.json"
 import FLAGGED from "./db/FLAGGED.json"
-import { error, log } from "./helpers"
+import { error, getMainDomain, log } from "./helpers"
 import { getStorageItem } from "./storageHelpers"
 import {
   APIListOfReasons,
@@ -16,9 +16,7 @@ import {
 export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
   log(`storage: isUrlFlagged ${url}`)
 
-  const parsedUrl = new URL(url)
-
-  const domain = parsedUrl.hostname.replace("www.", "")
+  const domain = getMainDomain(url)
 
   if (domain.endsWith(".il")) {
     const localTestKey = `isr_url_${domain}`
@@ -56,8 +54,8 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
       const selector = results && results[1]
 
       if (selector) {
-        const localTestKey = `${ruleForDomain.domain}_${selector}`
-        console.log(`checking ${localTestKey} for dismissal`)
+        const localTestKey = `${ruleForDomain.fileName}_${selector}`
+        log(`checking ${localTestKey} for dismissal`)
 
         let isDismissed: boolean
 
@@ -72,7 +70,7 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
         }
 
         if (isDismissed) {
-          console.log(`${localTestKey} was dismissed before!`)
+          log(`${localTestKey} was dismissed before!`)
           resolve({
             isDismissed: true,
             // reasons and name dont matter here
@@ -108,7 +106,7 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
         }
 
         findResult = DB.find((row) => row.selector === selector)
-
+        log("isUrlFlagged findResult:", findResult)
         if (findResult) {
           resolve({
             ...findResult,

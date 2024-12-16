@@ -1,6 +1,6 @@
 // import { sendToContentScript } from "@plasmohq/messaging"
 
-import { error, log } from "./helpers"
+import { error, log, warn } from "./helpers"
 import { isUrlFlagged } from "./storage"
 import { setStorageItem } from "./storageHelpers"
 import {
@@ -10,11 +10,39 @@ import {
   type SendResponse
 } from "./types"
 
-chrome.runtime.onInstalled.addListener(() => {
+chrome.runtime.onInstalled.addListener((details) => {
   log("background:runtime.onInstalled")
   chrome.storage.session.clear(() => {
     log("cleared session [onInstalled]...")
   })
+  // const manifest = chrome.runtime.getManifest()
+  // const contentScriptFile = manifest.content_scripts?.[0]?.js?.[0] // Get the first declared content script
+
+  // log("Content script file:", contentScriptFile)
+
+  // if (contentScriptFile) {
+  // const scriptPath = chrome.runtime.getURL(contentScriptFile) // Get the full URL to the content script
+  // log("Content script full URL:", scriptPath)
+
+  // Use this path to dynamically inject the script
+  // chrome.tabs.query({}, (tabs) => {
+  //   tabs.forEach((tab) => {
+  //     if (tab.url && tab.id && !isSpecialUrl(tab.url)) {
+  //       chrome.scripting
+  //         .executeScript({
+  //           target: { tabId: tab.id },
+  //           files: [contentScriptFile]
+  //         })
+  //         .then(() => {
+  //           log(`Injected content script into tab: ${tab.url}`)
+  //         })
+  //         .catch((e) => {
+  //           error(`Error injecting content script into tab ${tab.url}:`, e)
+  //         })
+  //     }
+  //   })
+  // })
+  // }
 })
 
 chrome.runtime.onStartup.addListener(() => {
@@ -35,66 +63,111 @@ function isSpecialUrl(url: string) {
   }
 }
 
-const testTabUrl = (tabId: number, url: string) => {
+const testTabUrl = async (tabId: number, url: string) => {
   if (isSpecialUrl(url)) {
     log(`testTabUrl ignoring special url [${url}]`)
 
     return
   }
+
   log(`testTabUrl ${tabId} [${url}]`)
 
-  isUrlFlagged(url)
-    .then((result) => {
-      log("testTabUrl isUrlFlagged result", result)
+  const result = await isUrlFlagged(url)
+  // .then((result) => {
+  log("testTabUrl isUrlFlagged result:", result)
 
-      chrome.tabs
-        .sendMessage<Message>(tabId, {
-          action: MessageTypes.GetTestResult,
-          result
-        })
-        .then((result) => {
-          log("chrome.tabs.sendMessage promise success", result)
-        })
-        .catch((e) => {
-          error(`chrome.tabs.sendMessage promise error [${url}]`, e)
-        })
-    })
-    .catch((e) => {
-      error(`testTabUrl isUrlFlagged promise error [${url}]`, e)
-    })
+  // setTimeout(async () => {
+  const msgResult = await chrome.tabs.sendMessage<Message>(tabId, {
+    action: MessageTypes.GetTestResult,
+    result
+  })
+  // .then((result) => {
+  log("chrome.tabs.sendMessage promise success", msgResult)
+  // }, 10000)
+
+  // })
+  // .catch((e) => {
+  //   error(`chrome.tabs.sendMessage promise error [${url}]`, e)
+  // })
+  // }
+
+  // }, 1000)
+  // })
+  // .catch((e) => {
+  //   error(`testTabUrl isUrlFlagged promise error [${url}]`, e)
+  // })
 }
 
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   const url = tab.url
+  log(`chrome.tabs.onUpdated [${tabId}]`, changeInfo, tab)
+
   if (
-    tab.active &&
+    // tab.active &&
     url &&
-    (changeInfo.url || changeInfo.status === "loading")
+    (changeInfo.url || changeInfo.status === "complete")
   ) {
-    log("chrome.tabs.onUpdated", tabId, changeInfo, tab)
-    setTimeout(() => {
-      testTabUrl(tabId, url)
-    }, 3000)
+    // setTimeout(() => {
+    await testTabUrl(tabId, url)
+    // }, 3000)
   }
   return true
 })
 
 chrome.tabs.onActivated.addListener((activeInfo) => {
   log("chrome.tabs.onActivated", activeInfo)
-  // Get the details of the newly active tab
-  chrome.tabs.get(activeInfo.tabId, (tab) => {
+
+  // Check the active tab's loading status and proceed
+  chrome.tabs.get(activeInfo.tabId, async (tab) => {
+    if (chrome.runtime.lastError) {
+      error("chrome.tabs.onActivated had lastError:", chrome.runtime.lastError)
+      return
+    }
+
     const url = tab.url
 
     if (!url) {
       return
     }
 
-    if (chrome.runtime.lastError) {
-      console.error(chrome.runtime.lastError)
-      return
+    // If the tab is already loaded, test the URL immediately
+    if (tab.status === "complete") {
+      log("chrome.tabs.onActivated tab was already completed, testing")
+
+      await testTabUrl(activeInfo.tabId, url)
+    } else {
+      log("chrome.tabs.onActivated tab wasnt completed, setting handler")
+
+      // Otherwise, wait for it to finish loading
+      const onUpdatedListener = async (
+        tabId: number,
+        changeInfo: chrome.tabs.TabChangeInfo,
+        tab: chrome.tabs.Tab
+      ) => {
+        log(`chrome.tabs.onActivated onUpdatedListener`, {
+          tabId,
+          changeInfo,
+          tab
+        })
+
+        if (
+          tabId === activeInfo.tabId &&
+          changeInfo.status === "complete" &&
+          tab.url
+        ) {
+          await testTabUrl(tabId, tab.url)
+
+          // Remove the listener to prevent duplicate calls
+          chrome.tabs.onUpdated.removeListener(onUpdatedListener)
+        } else {
+          warn("chrome.tabs.onActivated onUpdatedListener didnt check!")
+        }
+      }
+
+      chrome.tabs.onUpdated.addListener(onUpdatedListener)
     }
-    testTabUrl(activeInfo.tabId, url)
   })
+
   return true
 })
 
