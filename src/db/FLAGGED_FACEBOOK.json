@@ -1,5 +1,12 @@
 [
   {
+    "selector": "Sabra",
+    "name": "",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
     "selector": "dotPlayOfficial",
     "name": ".Play",
     "reasons": [
@@ -445,13 +452,6 @@
     "name": "8hands",
     "reasons": [
       "f"
-    ]
-  },
-  {
-    "selector": "RENTBUSTOYOTA",
-    "name": "ايجار تويوتا هاي اس ، ايجار هيونداي اتش وان ، إيجار ميكروباص",
-    "reasons": [
-      "h"
     ]
   },
   {
@@ -1719,6 +1719,13 @@
     "name": "Aharai TECH",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "ahavagermany",
+    "name": "AHAV",
+    "reasons": [
+      "b"
     ]
   },
   {
@@ -5156,6 +5163,27 @@
     "name": "Awonna",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "AXA.de",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "AXAAssuranceMaroc",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axainsurance",
+    "name": "AXA",
+    "reasons": [
+      "b"
     ]
   },
   {
@@ -24990,6 +25018,27 @@
     ]
   },
   {
+    "selector": "HP",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "OMENbyHP.de",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "HyperXDE",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
     "selector": "HQArchitects",
     "name": "HQ Architects",
     "reasons": [
@@ -44289,6 +44338,13 @@
     ]
   },
   {
+    "selector": "PumaGermany",
+    "name": "Puma",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
     "selector": "pumbaparking",
     "name": "Pumba",
     "reasons": [
@@ -49886,6 +49942,13 @@
     "name": "Sidelines Group",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "Siemens",
+    "name": "Siemens",
+    "reasons": [
+      "b"
     ]
   },
   {
@@ -64059,6 +64122,13 @@
   {
     "selector": "zzappmalaria",
     "name": "ZZapp Malaria",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "RENTBUSTOYOTA",
+    "name": "ايجار تويوتا هاي اس ، ايجار هيونداي اتش وان ، إيجار ميكروباص",
     "reasons": [
       "h"
     ]
