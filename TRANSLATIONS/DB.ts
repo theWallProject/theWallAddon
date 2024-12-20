@@ -2,8 +2,8 @@ export type TransDB = { [key: string]: { en: string; ar: string } }
 
 export const TRANSLATIONS = {
   extensionName: {
-    en: "The wall - Boycott assistant 🇵🇸",
-    ar: "الجدار - مساعد المقاطعة 🇵🇸"
+    en: "The wall - Boycott assistant",
+    ar: "الجدار - مساعد المقاطعة"
   },
   extensionDescription: {
     en: `Put more than 17,000 Boycott-worthy companies behind a wall 🚫`,
@@ -14,20 +14,20 @@ export const TRANSLATIONS = {
     ar: "الجدار 🇵🇸"
   },
   reasonUrlIL: {
-    en: "This Url ends with .il, This means it's an Israeli 🇮🇱 website!",
-    ar: "هذا الموقع من الكيان الصهيوني لأنه ينتهي ب .il 🇮🇱"
+    en: "This Url ends with .il, This means it's an Israeli website!",
+    ar: "هذا الموقع من الكيان الصهيوني لأنه ينتهي ب .il"
   },
   reasonFounder: {
-    en: "One or more founders/investors of $1 are connected to Israel 🇮🇱",
-    ar: "تنبيه: أحد المستثمرين او المؤسسين ل $1 من الكيان الصهيوني 🇮🇱"
+    en: "One or more founders/investors of $1 are connected to Israel",
+    ar: "تنبيه: أحد المستثمرين او المؤسسين ل $1 من الكيان الصهيوني"
   },
   reasonHeadquarter: {
-    en: "$1 headquarters is in Israel 🇮🇱",
-    ar: "المقر الرئيسي ل$1 يقع في الكيان الصهيوني 🇮🇱"
+    en: "$1 headquarters is in Israel",
+    ar: "المقر الرئيسي ل$1 يقع في الكيان الصهيوني"
   },
   reasonBDS: {
     en: "$1 is listed on the BDS Boycott list",
-    ar: "$1 BDS مدرج في قائمة التجاهل الصهيوني"
+    ar: "$1 BDS مدرج في قائمة المقاطعة "
   },
   modalShareMobileImage: {
     en: "Share image",
