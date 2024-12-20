@@ -1,6 +1,6 @@
 .bgLayer {
   /* opacity: 0.7; */
-  background-position: center;
+  background-position: right;
   /* background-size: cover; */
   width: 100vw;
   height: 100vh;
@@ -19,21 +19,18 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  font-family: serif;
   transition: opacity 0.5s ease;
 }
 
 .modalContainer {
-  background-color: #fff;
-  color: black;
-  width: 30vw;
-  font-family: serif;
+  color: #000;
+  width: 46vw;
+  min-width: 300px;
+  font-family: "Sedgwick Ave";
   transition: opacity 0.5s;
   position: fixed;
-  box-shadow: 3px 3px 8px #7e7e7e;
-  min-width: 300px;
-  /* max-height: 200px; */
   top: 20vh;
+  box-shadow: 3px 3px 41px #7e7e7e;
 }
 
 .buttonsWrapper {
@@ -47,7 +44,10 @@
 }
 
 .modalContentWrapper {
+  text-shadow: 0 0 4px #f44336;
+  color: #f44336;
   padding-bottom: 20px;
+  font-size: 3rem;
 }
 
 .headerTitle {
@@ -58,48 +58,51 @@
 
 .button {
   box-sizing: border-box;
-  color: #238518;
   cursor: pointer;
-  text-shadow: none;
-  text-underline-offset: 1px;
+  -webkit-user-select: none;
   user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
   word-break: break-word;
-  background-color: #e9ffe7;
   background-position: 0 0;
-  border: 1px solid #cae1cc;
+  /* border: 4px solid #cae1cc; */
   border-radius: 11px;
   align-items: center;
-  margin-right: 10px;
-  padding: 2px 12px;
-  font-size: 1rem;
-  line-height: 26px;
+  margin-right: 30px;
+  font-family: inherit;
+  font-size: 1.4rem;
+  line-height: 17px;
   transition:
     border 0.4s ease-in-out,
     box-shadow 0.4s ease-in-out,
     background-color 0.4s ease-in-out;
-
   display: flex;
+  background: none;
+  color: darkseagreen;
 }
 
 .button:hover {
-  background-color: #c3ffc1;
+  /* background-color: #c3ffc1; */
   border-color: #71e176;
 }
 
-@media (min-width: 1000px) {
-  /* For tablets and larger screens */
-
-  .container {
-    min-width: 500px;
+@media (min-width: 768px) {
+  .button {
+    font-size: 2rem;
   }
-
-  .headerTitle {
-    font-size: 40px;
+  .modalContainer {
+    width: 70vw;
   }
+}
 
+@media (min-width: 1024px) {
   .modalContentWrapper {
-    font-size: 25px;
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .modalContentWrapper {
+    font-size: 10rem;
   }
 }
