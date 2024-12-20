@@ -17,6 +17,9 @@
   "reasonHeadquarter": {
     "message": "$1 headquarters is in Israel 🇮🇱"
   },
+  "reasonBDS": {
+    "message": "$1 is listed on the BDS Boycott list"
+  },
   "modalShareMobileImage": {
     "message": "Share image"
   },

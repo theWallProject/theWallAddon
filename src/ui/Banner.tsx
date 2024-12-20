@@ -83,6 +83,12 @@ export const Banner = () => {
                       ])}
                     </div>
                   )
+                case "b":
+                  return (
+                    <div key={reason}>
+                      {chrome.i18n.getMessage("reasonBDS", [testResult.name])}
+                    </div>
+                  )
 
                 default:
                   reason satisfies never

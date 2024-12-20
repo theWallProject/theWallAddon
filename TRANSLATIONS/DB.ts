@@ -25,6 +25,10 @@ export const TRANSLATIONS = {
     en: "$1 headquarters is in Israel 🇮🇱",
     ar: "المقر الرئيسي ل$1 يقع في الكيان الصهيوني 🇮🇱"
   },
+  reasonBDS: {
+    en: "$1 is listed on the BDS Boycott list",
+    ar: "$1 BDS مدرج في قائمة التجاهل الصهيوني"
+  },
   modalShareMobileImage: {
     en: "Share image",
     ar: "أنشر صورة"
