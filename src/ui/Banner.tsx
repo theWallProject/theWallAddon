@@ -8,7 +8,6 @@ import { ShareButton } from "../share_button/ShareButton"
 import { MessageTypes, type Message, type MessageResponseMap } from "../types"
 import { Button } from "./Button"
 // import { GraffitiEffect } from "./GraffitiEffect"
-// import "@fontsource/sedgwick-ave" // Defaults to 400 weight
 
 import style from "./style.module.css"
 
@@ -28,6 +27,12 @@ export const Banner = () => {
         setTestResult(undefined)
       }
     )
+  }
+
+  const handleReportMistakeClick = () => {
+    const currentUrl = window.location.href
+    const mailtoLink = `mailto:the.watermelon.project@gmail.com?subject=Error Report&body=${encodeURIComponent(currentUrl)}`
+    window.open(mailtoLink, "_blank")
   }
 
   useEffect(() => {
@@ -116,6 +121,12 @@ export const Banner = () => {
             />
           </div>
         </div>
+      </div>
+      <div className={style.bottomBar}>
+        <Button
+          title={chrome.i18n.getMessage("buttomBarButtonReport")}
+          onClick={handleReportMistakeClick}
+        />
       </div>
     </div>
   ) : (
