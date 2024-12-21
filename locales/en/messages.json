@@ -26,6 +26,9 @@
   "modalShareButton": {
     "message": "Share"
   },
+  "buttomBarButtonReport": {
+    "message": "Report mistake!"
+  },
   "modalDismissSession": {
     "message": "Allow this time"
   },

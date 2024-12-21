@@ -26,6 +26,9 @@
   "modalShareButton": {
     "message": "أنشر"
   },
+  "buttomBarButtonReport": {
+    "message": "أبلغ عن مشكلة"
+  },
   "modalDismissSession": {
     "message": "سماح مرة"
   },
