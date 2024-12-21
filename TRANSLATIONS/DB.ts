@@ -37,6 +37,10 @@ export const TRANSLATIONS = {
     en: "Share",
     ar: "أنشر"
   },
+  buttomBarButtonReport: {
+    en: "Report mistake!",
+    ar: "أبلغ عن مشكلة"
+  },
   modalDismissSession: {
     en: "Allow this time",
     ar: "سماح مرة"
