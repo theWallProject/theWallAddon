@@ -2210,6 +2210,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "ahava.com",
+    "name": "AHAV",
+    "reasons": ["b"]
+  },
+  {
     "selector": "ai-hay.vn",
     "name": "AI Hay",
     "reasons": ["f"]
@@ -5430,6 +5435,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "arubanetworks.com",
+    "name": "HP",
+    "reasons": ["b"]
+  },
+  {
     "selector": "arugga.com",
     "name": "Arugga AI Farming",
     "reasons": ["h"]
@@ -6393,6 +6403,11 @@
     "selector": "awonna.com",
     "name": "Awonna",
     "reasons": ["h"]
+  },
+  {
+    "selector": "axa.com",
+    "name": "AXA",
+    "reasons": ["b"]
   },
   {
     "selector": "axeite.com",
@@ -29545,6 +29560,16 @@
     "reasons": ["h"]
   },
   {
+    "selector": "hp.com",
+    "name": "HP",
+    "reasons": ["b"]
+  },
+  {
+    "selector": "hpe.com",
+    "name": "HP",
+    "reasons": ["b"]
+  },
+  {
     "selector": "hptg.com",
     "name": "Heptagon Advanced Micro Optics",
     "reasons": ["f"]
@@ -29858,6 +29883,11 @@
     "selector": "hyperwise.com",
     "name": "Hyperwise",
     "reasons": ["h"]
+  },
+  {
+    "selector": "hyperx.com",
+    "name": "HP",
+    "reasons": ["b"]
   },
   {
     "selector": "hypnos-surgical.com",
@@ -45910,6 +45940,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "omen.com",
+    "name": "HP",
+    "reasons": ["b"]
+  },
+  {
     "selector": "omendiecasting.com",
     "name": "Omen Die Casting",
     "reasons": ["h"]
@@ -51790,6 +51825,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "puma.com",
+    "name": "Puma",
+    "reasons": ["b"]
+  },
+  {
     "selector": "pumbaparking.com",
     "name": "Pumba",
     "reasons": ["h"]
@@ -55405,6 +55445,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "sabra.com",
+    "name": "",
+    "reasons": ["b"]
+  },
+  {
     "selector": "sabrafence.com",
     "name": "Sabra Fence Technologies",
     "reasons": ["h"]
@@ -58443,6 +58488,16 @@
     "selector": "sidense.com",
     "name": "Sidense",
     "reasons": ["f"]
+  },
+  {
+    "selector": "siemens-stiftung.org",
+    "name": "Siemens",
+    "reasons": ["b"]
+  },
+  {
+    "selector": "siemens.com",
+    "name": "Siemens",
+    "reasons": ["b"]
   },
   {
     "selector": "siemplify.co",

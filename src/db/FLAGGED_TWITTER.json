@@ -1,5 +1,12 @@
 [
   {
+    "selector": "Sabra",
+    "name": "",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
     "selector": "101therapeutics",
     "name": "101 Therapeutics",
     "reasons": [
@@ -324,13 +331,6 @@
   {
     "selector": "90sec_app",
     "name": "90sec Technologies",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "RadwaRe47086226",
-    "name": "ايجار تويوتا هاي اس ، ايجار هيونداي اتش وان ، إيجار ميكروباص",
     "reasons": [
       "h"
     ]
@@ -3679,6 +3679,13 @@
     "name": "AweVid",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "AXA",
+    "name": "AXA",
+    "reasons": [
+      "b"
     ]
   },
   {
@@ -17465,6 +17472,41 @@
     ]
   },
   {
+    "selector": "hp",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "OMENbyHP",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "HyperX",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "HPE",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "HPE_Aruba_NETW",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
     "selector": "HRusNews",
     "name": "HRus",
     "reasons": [
@@ -30765,6 +30807,13 @@
     ]
   },
   {
+    "selector": "puma",
+    "name": "Puma",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
     "selector": "purepeakexperts",
     "name": "PurePeak",
     "reasons": [
@@ -34913,6 +34962,13 @@
     "name": "Sidense",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "Siemens",
+    "name": "Siemens",
+    "reasons": [
+      "b"
     ]
   },
   {
@@ -45068,6 +45124,13 @@
   {
     "selector": "zadataHQ",
     "name": "ZΛDΛTΛ",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "RadwaRe47086226",
+    "name": "ايجار تويوتا هاي اس ، ايجار هيونداي اتش وان ، إيجار ميكروباص",
     "reasons": [
       "h"
     ]

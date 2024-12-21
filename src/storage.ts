@@ -1,17 +1,18 @@
+import {
+  APIListOfReasons,
+  CONFIG,
+  DBFileNames,
+  type APIEndpointDomains,
+  type APIEndpointDomainsResult
+} from "@theWallProject/addonCommon"
+
 import FLAGGED_FB from "./db/FLAGGED_FACEBOOK.json"
 import FLAGGED_LI_COMPANY from "./db/FLAGGED_LI_COMPANY.json"
 import FLAGGED_TWITTER from "./db/FLAGGED_TWITTER.json"
 import FLAGGED from "./db/FLAGGED.json"
 import { error, getMainDomain, log } from "./helpers"
 import { getStorageItem } from "./storageHelpers"
-import {
-  APIListOfReasons,
-  CONFIG,
-  DBFileNames,
-  type APIEndpointDomains,
-  type APIEndpointDomainsResult,
-  type UrlTestResult
-} from "./types"
+import { type UrlTestResult } from "./types"
 
 export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
   log(`storage: isUrlFlagged ${url}`)

@@ -4,7 +4,8 @@ import type { PlasmoCSConfig } from "plasmo"
 import { Banner } from "src/ui/Banner"
 
 export const config: PlasmoCSConfig = {
-  matches: ["<all_urls>"]
+  matches: ["<all_urls>"],
+  css: ["font.css"]
   // all_frames: true
   // run_at: "document_start"
 }

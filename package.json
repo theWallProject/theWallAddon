@@ -1,6 +1,6 @@
 {
   "name": "@thewall/addon",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "theWall",
   "scripts": {
     "trans": "node --loader ts-node/esm TRANSLATIONS/generate.ts",
@@ -17,25 +17,27 @@
     "package:opera": "plasmo package --target=opera-mv3",
     "pre-build": "rm -rf build && tcm -p src/**/*.css && npm run trans",
     "watch": "tcm -p src/**/*.css -w",
-    "nuke": "rm -rf node_modules build .plasmo && npm i"
+    "nuke": "rm -rf node_modules build .plasmo && npm cache clean --force && npm i",
+    "preinstall": "npm install github:theWallProject/addonCommon --force"
   },
   "type": "module",
   "dependencies": {
+    "@theWallProject/addonCommon": "github:theWallProject/addonCommon",
     "plasmo": "0.89.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "react-icons": "^5.4.0"
   },
   "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "@ianvs/prettier-plugin-sort-imports": "4.4.0",
     "@types/chrome": "0.0.258",
     "@types/node": "20.11.5",
-    "@types/react": "18.2.48",
-    "@types/react-dom": "18.2.18",
-    "prettier": "3.2.4",
+    "@types/react": "18.3.17",
+    "@types/react-dom": "18.3.5",
+    "prettier": "3.2.5",
     "ts-node": "^10.9.2",
     "typed-css-modules": "^0.9.1",
-    "typescript": "5.3.3",
+    "typescript": "5.7.2",
     "web-ext": "^8.3.0",
     "zod": "^3.24.1"
   },

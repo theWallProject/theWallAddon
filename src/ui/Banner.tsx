@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react"
 
 // @ts-expect-error
-import backgroundImage from "../../assets/wall.jpg"
+import backgroundImage from "../../assets/wall2.jpg"
 // import { log, warn } from "../helpers"
 // import { share } from "../image_sharing/image"
 import { ShareButton } from "../share_button/ShareButton"
 import { MessageTypes, type Message, type MessageResponseMap } from "../types"
 import { Button } from "./Button"
+// import { GraffitiEffect } from "./GraffitiEffect"
+// import "@fontsource/sedgwick-ave" // Defaults to 400 weight
+
 import style from "./style.module.css"
 
 export const Banner = () => {
@@ -54,10 +57,6 @@ export const Banner = () => {
 
       <div className={style.modalContainer}>
         <div className={style.modalMargin}>
-          <h3 className={style.headerTitle}>
-            {chrome.i18n.getMessage("headerTitle")}
-          </h3>
-
           <div className={style.modalContentWrapper}>
             {testResult.reasons.map((reason) => {
               switch (reason) {
@@ -81,6 +80,12 @@ export const Banner = () => {
                       {chrome.i18n.getMessage("reasonHeadquarter", [
                         testResult.name
                       ])}
+                    </div>
+                  )
+                case "b":
+                  return (
+                    <div key={reason}>
+                      {chrome.i18n.getMessage("reasonBDS", [testResult.name])}
                     </div>
                   )
 

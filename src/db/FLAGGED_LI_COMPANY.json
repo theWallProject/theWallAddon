@@ -1,5 +1,12 @@
 [
   {
+    "selector": "sabra-dipping-company-llc",
+    "name": "",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
     "selector": "dot-play",
     "name": ".Play",
     "reasons": [
@@ -3203,6 +3210,13 @@
     "name": "Aharai TECH",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "dead-sea-laboratories-ahava",
+    "name": "AHAV",
+    "reasons": [
+      "b"
     ]
   },
   {
@@ -9335,6 +9349,174 @@
     "name": "Awwweb",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "axa",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-wealth",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-group-operations",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-partners",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-global-re",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "bharti-axa-life-insurance",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-mbask-ojsc",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-investment-managers",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-life-invest",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "architas-multi-manager",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-global-direct",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-uk",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "healthanea",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-von-herz-zu-herz-e-v",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axahealth",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "gig-saudi",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axahongkong",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-corporate-solutions",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-gulf",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-liabilities-managers",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-mps",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-minmetals-assurance",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-france",
+    "name": "AXA",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "axa-research-fund",
+    "name": "AXA",
+    "reasons": [
+      "b"
     ]
   },
   {
@@ -42637,6 +42819,181 @@
     ]
   },
   {
+    "selector": "hewlett-packard-enterprise",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "hyperx",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "aruba-a-hewlett-packard-enterprise-company",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "scytale.io",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "hewlett-packard-labs",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "hpe-financial-services",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "hpe-partner-ready",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "athonet",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "cray-inc-",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "hpe-it-solutions-for-smb",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "hpe-servers-and-systems",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "bluedata-software",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "cloud-cruiser-inc",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "nimble-storage",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "cloudphysics",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "determined-ai",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "hpe-greenlake",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "hpe-engage&grow-",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "mapr-technologies",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "simplivity-corporation",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "cloud-technology-partners",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "hpe-ai",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "hpe-aruba-networking",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "hpe-pointnext-services",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "hpestorage",
+    "name": "HP",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
     "selector": "hq-architects",
     "name": "HQ Architects",
     "reasons": [
@@ -74760,6 +75117,13 @@
     ]
   },
   {
+    "selector": "puma",
+    "name": "Puma",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
     "selector": "pumbaparking",
     "name": "Pumba",
     "reasons": [
@@ -84361,6 +84725,90 @@
     "name": "Sides",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "enlighted-inc",
+    "name": "Siemens",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "siemensinfrastructure",
+    "name": "Siemens",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "siemens-financial-services",
+    "name": "Siemens",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "siemens-research-and-innovation-ecosystem",
+    "name": "Siemens",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "mobase",
+    "name": "Siemens",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "siemens-mobility",
+    "name": "Siemens",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "siemens-industry-",
+    "name": "Siemens",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "ecodomus",
+    "name": "Siemens",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "siemens-healthineers",
+    "name": "Siemens",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "siemenssoftware",
+    "name": "Siemens",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "hacon",
+    "name": "Siemens",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
+    "selector": "siemens-eda",
+    "name": "Siemens",
+    "reasons": [
+      "b"
     ]
   },
   {
