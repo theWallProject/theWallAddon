@@ -29,7 +29,7 @@
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   padding: 10px;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 10px;
   margin-top: 5px;
 }
@@ -43,9 +43,10 @@
 .shareOption a {
   text-decoration: none;
   color: inherit;
-  padding: 8px;
+  /* padding: 8px; */
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  display: flex;
 }
 
 .shareOption a:hover {

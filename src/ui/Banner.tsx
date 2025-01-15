@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react"
 
 // @ts-expect-error
-import backgroundImage from "../../assets/wall2.jpg"
+import theWallBlack from "../../assets/images/the-wall-white.png"
+// @ts-expect-error
+import backgroundImage from "../../assets/images/wall2.jpg"
 // import { log, warn } from "../helpers"
 // import { share } from "../image_sharing/image"
 import { ShareButton } from "../share_button/ShareButton"
@@ -52,14 +54,20 @@ export const Banner = () => {
   }, [])
 
   return testResult && !testResult.isDismissed ? (
-    <div className={style.container} dir={chrome.i18n.getMessage("@@bidi_dir")}>
+    <div
+      className={`${style.container} ${chrome.i18n.getMessage("@@ui_locale").includes("ar") ? style.ar : ""}`}
+      dir={chrome.i18n.getMessage("@@bidi_dir")}>
       <div
         className={style.bgLayer}
         style={{
           backgroundImage: `url(${backgroundImage})`
         }}
       />
-
+      <img
+        src={theWallBlack}
+        className={style.theWallLogo}
+        alt="The Wall Logo"
+      />
       <div className={style.modalContainer}>
         <div className={style.modalMargin}>
           <div className={style.modalContentWrapper}>

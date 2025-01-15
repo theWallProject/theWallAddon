@@ -1,7 +1,23 @@
 @font-face {
-  font-family: "Sedgwick Ave";
+  font-family: "JimmyCollins";
+  font-style: normal;
+  /* font-weight: 400; */
+  font-display: swap;
+  src: url(data-base64:../assets/fonts/JimmyCollins.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "FFBouya-Normal";
+  font-style: normal;
+  /* font-weight: 400; */
+  font-display: swap;
+  src: url(data-base64:../assets/fonts/FFBouya-Normal.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "WallShaker";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(data-base64:../assets/SedgwickAve-Regular.ttf) format("opentype");
+  src: url(data-base64:../assets/fonts/WallShaker.otf) format("opentype");
 }

@@ -3,19 +3,16 @@
     "message": "The wall - Boycott assistant"
   },
   "extensionDescription": {
-    "message": "Put more than 17,000 Boycott-worthy companies behind a wall 🚫"
-  },
-  "headerTitle": {
-    "message": "The wall 🇵🇸"
+    "message": "Put more than 19,000 Boycott-worthy companies behind a wall 🧱"
   },
   "reasonUrlIL": {
     "message": "This Url ends with .il, This means it's an Israeli website!"
   },
   "reasonFounder": {
-    "message": "One or more founders/investors of $1 are connected to Israel"
+    "message": "One or more founders/investors of $1 are connected to Israel!"
   },
   "reasonHeadquarter": {
-    "message": "$1 headquarters is in Israel"
+    "message": "$1 headquarters is in Israel."
   },
   "reasonBDS": {
     "message": "$1 is listed on the BDS Boycott list"
@@ -33,6 +30,6 @@
     "message": "Allow this time"
   },
   "sharingMessageText": {
-    "message": "I detected an Israeli website using \"the wall\" browser addon. Try it!"
+    "message": "I avoided an Israeli website by using \"The wall - Boycott assistant\" browser addon. Try it!"
   }
 }
