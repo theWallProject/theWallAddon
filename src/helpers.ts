@@ -12,7 +12,7 @@ export function error(...params: unknown[]) {
 
 export function warn(...params: unknown[]) {
   // alert(text)
-  console.error("⚠️⚠️⚠️ 🍉🍉🍉🍉 ⚠️⚠️⚠️", ...params)
+  console.warn("⚠️⚠️⚠️ 🍉🍉🍉🍉 ⚠️⚠️⚠️", ...params)
   // debugger
 }
 

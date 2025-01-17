@@ -76,13 +76,16 @@ const testTabUrl = async (tabId: number, url: string) => {
   // .then((result) => {
   log("testTabUrl isUrlFlagged result:", result)
 
-  // setTimeout(async () => {
-  const msgResult = await chrome.tabs.sendMessage<Message>(tabId, {
-    action: MessageTypes.GetTestResult,
-    result
-  })
-  // .then((result) => {
-  log("chrome.tabs.sendMessage promise success", msgResult)
+  // todo: avoid using setTimeout
+  setTimeout(async () => {
+    const msgResult = await chrome.tabs.sendMessage<Message>(tabId, {
+      action: MessageTypes.GetTestResult,
+      result
+    })
+    // .then((result) => {
+    log("chrome.tabs.sendMessage promise success", msgResult)
+  }, 4000)
+
   // }, 10000)
 
   // })
@@ -100,7 +103,11 @@ const testTabUrl = async (tabId: number, url: string) => {
 
 chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   const url = tab.url
-  log(`chrome.tabs.onUpdated [${tabId}]`, changeInfo, tab)
+  log(`chrome.tabs.onUpdated [${tabId}]`, { url, changeInfo, tab })
+
+  if (changeInfo.status === "loading") {
+    return
+  }
 
   if (
     // tab.active &&
@@ -110,6 +117,8 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
     // setTimeout(() => {
     await testTabUrl(tabId, url)
     // }, 3000)
+  } else {
+    warn(`chrome.tabs.onUpdated [${tabId}] was ignored`)
   }
   return true
 })

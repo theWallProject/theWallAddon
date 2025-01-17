@@ -1,15 +1,16 @@
 {
   "name": "@thewall/addon",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "author": "theWall",
   "scripts": {
     "trans": "node --loader ts-node/esm TRANSLATIONS/generate.ts",
     "dev": "npm run pre-build && plasmo dev",
-    "build": "npm run pre-build && npm run build:chrome && npm run build:ff && npm run build:edge && npm run build:opera",
-    "build:chrome": "plasmo build",
-    "build:ff": "plasmo build --target=firefox-mv2",
-    "build:edge": "plasmo build --target=edge-mv3",
-    "build:opera": "plasmo build --target=opera-mv3",
+    "build": "npm run pre-build && npm run build:chrome && npm run build:ff && npm run build:edge && npm run build:opera && npm run build:ff-src",
+    "build:chrome": "plasmo build --no-minify",
+    "build:ff": "plasmo build --target=firefox-mv2 --no-minify",
+    "build:edge": "plasmo build --target=edge-mv3 --no-minify",
+    "build:opera": "plasmo build --target=opera-mv3 --no-minify",
+    "build:ff-src": "zip -r ./build/firefox.zip tsconfig.json README.md package.json .prettierrc.mjs package-lock.json TRANSLATIONS/* src/* locales/* assets/*",
     "package": "npm run build && npm run package:chrome && npm run package:ff && npm run package:edge && npm run package:opera",
     "package:chrome": "plasmo package",
     "package:ff": "plasmo package --target=firefox-mv2",
@@ -48,6 +49,11 @@
     "permissions": [
       "tabs",
       "storage"
-    ]
+    ],
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "{4df1496d-becb-4eb8-9f3e-08a52cf3dd6a}"
+      }
+    }
   }
 }
