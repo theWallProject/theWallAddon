@@ -1,12 +1,5 @@
 [
   {
-    "selector": "sabra-dipping-company-llc",
-    "name": "",
-    "reasons": [
-      "b"
-    ]
-  },
-  {
     "selector": "dot-play",
     "name": ".Play",
     "reasons": [
@@ -876,7 +869,7 @@
   },
   {
     "selector": "a-l-group",
-    "name": "A.L. GROUP",
+    "name": "A.L. FILTER",
     "reasons": [
       "h"
     ]
@@ -1732,7 +1725,8 @@
     "selector": "adallom",
     "name": "Adallom",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -4256,6 +4250,13 @@
     ]
   },
   {
+    "selector": "allalouf-co-shipping-ltd",
+    "name": "Allalouf Group",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "9549436",
     "name": "AllBe1",
     "reasons": [
@@ -5189,6 +5190,13 @@
   {
     "selector": "amishav-ltd",
     "name": "Amishav Group",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "amisragas-solar",
+    "name": "Amisragas",
     "reasons": [
       "h"
     ]
@@ -6576,6 +6584,7 @@
     "selector": "appwrite",
     "name": "Appwrite",
     "reasons": [
+      "h",
       "f"
     ]
   },
@@ -10780,6 +10789,13 @@
     ]
   },
   {
+    "selector": "btb-be-the-bank",
+    "name": "Be the bank",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "b-e-z",
     "name": "Be Z Online",
     "reasons": [
@@ -13240,7 +13256,8 @@
     "selector": "blazepod",
     "name": "BlazePod Inc",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -13302,6 +13319,13 @@
   {
     "selector": "blings-io",
     "name": "Blings.io",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "elastic-media",
+    "name": "Blink",
     "reasons": [
       "h"
     ]
@@ -14827,7 +14851,7 @@
   },
   {
     "selector": "bright-led-ltd.",
-    "name": "Bright LED",
+    "name": "Bright Innovations",
     "reasons": [
       "h"
     ]
@@ -15211,8 +15235,8 @@
     ]
   },
   {
-    "selector": "btb-be-the-bank",
-    "name": "BTB Israel",
+    "selector": "bt9-ltd-",
+    "name": "BT9",
     "reasons": [
       "h"
     ]
@@ -15738,6 +15762,13 @@
   {
     "selector": "computer-c-data",
     "name": "C-DATA",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "ycd-multimedia",
+    "name": "C-nario",
     "reasons": [
       "h"
     ]
@@ -18488,7 +18519,7 @@
   },
   {
     "selector": "cidev-agencies-1973-ltd.",
-    "name": "Cidev Electronics",
+    "name": "Cidev",
     "reasons": [
       "h"
     ]
@@ -18818,6 +18849,13 @@
   {
     "selector": "clair-labs",
     "name": "Clair Labs",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "mercuremoval",
+    "name": "Clairion",
     "reasons": [
       "h"
     ]
@@ -20764,6 +20802,13 @@
   {
     "selector": "compugen-ltd",
     "name": "Compugen",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "compulab",
+    "name": "CompuLab",
     "reasons": [
       "h"
     ]
@@ -23418,7 +23463,8 @@
     "selector": "cynet-security",
     "name": "Cynet",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -24542,6 +24588,13 @@
     ]
   },
   {
+    "selector": "dbmotion",
+    "name": "dbMotion",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "2391382",
     "name": "DBS-H",
     "reasons": [
@@ -25484,6 +25537,13 @@
     "name": "DG4",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "sizmek",
+    "name": "DGIT",
+    "reasons": [
+      "f"
     ]
   },
   {
@@ -27034,6 +27094,13 @@
     ]
   },
   {
+    "selector": "drill-digital-marketing-strategies",
+    "name": "Drill",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "1054956",
     "name": "DrinkedIn",
     "reasons": [
@@ -28483,6 +28550,13 @@
     ]
   },
   {
+    "selector": "fourier-education",
+    "name": "Einstein",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "eio-biomedical",
     "name": "EIO Biomedical",
     "reasons": [
@@ -28681,13 +28755,6 @@
   {
     "selector": "elad-technologies",
     "name": "Elad Technologies",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "elastic-media",
-    "name": "Elastic Media",
     "reasons": [
       "h"
     ]
@@ -33498,6 +33565,7 @@
     "selector": "finaloop",
     "name": "Finaloop",
     "reasons": [
+      "h",
       "f"
     ]
   },
@@ -34064,6 +34132,13 @@
   {
     "selector": "fititapp",
     "name": "Fitit",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "fitix",
+    "name": "Fitix",
     "reasons": [
       "h"
     ]
@@ -35210,13 +35285,6 @@
     ]
   },
   {
-    "selector": "fourier-education",
-    "name": "Fourier Education",
-    "reasons": [
-      "f"
-    ]
-  },
-  {
     "selector": "87433515",
     "name": "Fourier Optics",
     "reasons": [
@@ -35781,6 +35849,13 @@
     "name": "FundStud",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "10182",
+    "name": "Fundtech",
+    "reasons": [
+      "f"
     ]
   },
   {
@@ -36360,6 +36435,13 @@
   {
     "selector": "galil-mountain-winery",
     "name": "Galil Mountains Winery",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "galil-ofek-ventures",
+    "name": "Galil Ofek",
     "reasons": [
       "h"
     ]
@@ -39553,7 +39635,8 @@
     "selector": "greenq-technologies",
     "name": "GreenQ",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -41624,13 +41707,6 @@
   {
     "selector": "havermi",
     "name": "Hevrami",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "fitix",
-    "name": "Hexa",
     "reasons": [
       "h"
     ]
@@ -43834,15 +43910,15 @@
     ]
   },
   {
-    "selector": "trusteed-plans-service-corporation",
+    "selector": "icl-group",
     "name": "ICL",
     "reasons": [
       "h"
     ]
   },
   {
-    "selector": "icl-group",
-    "name": "ICL Group",
+    "selector": "trusteed-plans-service-corporation",
+    "name": "ICL",
     "reasons": [
       "h"
     ]
@@ -44037,6 +44113,13 @@
     ]
   },
   {
+    "selector": "idea-informtion-systems",
+    "name": "Idea Information",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "idealsolar",
     "name": "Ideal Solar Energy",
     "reasons": [
@@ -44095,6 +44178,13 @@
   {
     "selector": "ideodigital",
     "name": "IdeoDigital",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "1505128",
+    "name": "Ideomobile",
     "reasons": [
       "h"
     ]
@@ -46697,6 +46787,13 @@
     ]
   },
   {
+    "selector": "israelinnovationauthority",
+    "name": "International Health-Tech Pilot Program",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "international-institute-for-counter-terrorism",
     "name": "International Institute for Counter Terrorism",
     "reasons": [
@@ -47679,13 +47776,6 @@
   {
     "selector": "iif-israel-infrastructure-fund",
     "name": "Israel Infrastructure Fund",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "israelinnovationauthority",
-    "name": "Israel Innovation Authority",
     "reasons": [
       "h"
     ]
@@ -51975,6 +52065,13 @@
     ]
   },
   {
+    "selector": "kramer-electronics-ltd",
+    "name": "Kramer",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "kramer-davidovich-pr",
     "name": "Kramer Davidovich",
     "reasons": [
@@ -52250,6 +52347,13 @@
   {
     "selector": "kzb-technical-rubber-products-1987-ltd",
     "name": "KZB Technical Rubber Products",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "kzen-networks",
+    "name": "KZen Networks",
     "reasons": [
       "h"
     ]
@@ -55160,6 +55264,13 @@
     ]
   },
   {
+    "selector": "lumenis",
+    "name": "Lumenis",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "11124",
     "name": "Lumenis Surgical Division",
     "reasons": [
@@ -55993,6 +56104,14 @@
     ]
   },
   {
+    "selector": "traffix-systems",
+    "name": "MagniFire Websystems",
+    "reasons": [
+      "f",
+      "h"
+    ]
+  },
+  {
     "selector": "multivision-tv",
     "name": "Magnify.net",
     "reasons": [
@@ -56714,13 +56833,6 @@
     ]
   },
   {
-    "selector": "galil-ofek-ventures",
-    "name": "Marpé",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "selector": "marquee-inc",
     "name": "Marquee",
     "reasons": [
@@ -56765,6 +56877,13 @@
   {
     "selector": "marvell-israel-ltd",
     "name": "Marvell Israel",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "marvell",
+    "name": "Marvell Software Solutions Israel",
     "reasons": [
       "h"
     ]
@@ -56821,6 +56940,13 @@
   {
     "selector": "mashabey-enosh-executive-search",
     "name": "Mashabey Enosh",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "three-sixty-five",
+    "name": "Mashbir",
     "reasons": [
       "h"
     ]
@@ -58409,7 +58535,7 @@
   },
   {
     "selector": "membit-chatbot",
-    "name": "Membit Bot",
+    "name": "Membit",
     "reasons": [
       "h"
     ]
@@ -58641,13 +58767,6 @@
   {
     "selector": "merchico",
     "name": "Merchico",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "mercuremoval",
-    "name": "MercuRemoval",
     "reasons": [
       "h"
     ]
@@ -59018,7 +59137,7 @@
   },
   {
     "selector": "metis-bn",
-    "name": "Metis-BK",
+    "name": "Metis Augmented Intelligence",
     "reasons": [
       "h"
     ]
@@ -61561,7 +61680,8 @@
     "selector": "motorad-of-america",
     "name": "MotoRad",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -63707,6 +63827,13 @@
     ]
   },
   {
+    "selector": "netcraft-",
+    "name": "Netcraft Israel",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "neteera-technologies-ltd.",
     "name": "Neteera",
     "reasons": [
@@ -65362,7 +65489,8 @@
     "selector": "notal-vision",
     "name": "Notal Vision",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -65391,6 +65519,20 @@
     "name": "Nova Lumos",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "11129",
+    "name": "Nova Measuring Instruments",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "novaplasma-com",
+    "name": "Nova Plasma",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -67266,7 +67408,8 @@
     "selector": "take-one-step",
     "name": "OneStep",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -68908,6 +69051,13 @@
     ]
   },
   {
+    "selector": "eshbel-technologies-ltd-",
+    "name": "Ovdimnet",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "oved-gubi-&-co-",
     "name": "ovedgubi",
     "reasons": [
@@ -69310,7 +69460,8 @@
     "selector": "pagaya",
     "name": "Pagaya",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -70644,6 +70795,13 @@
     ]
   },
   {
+    "selector": "people-&-computers",
+    "name": "People & Computers",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "peoplebroadcasting",
     "name": "PeopleBroadcasting",
     "reasons": [
@@ -70766,7 +70924,8 @@
     "selector": "485728",
     "name": "Perfecto Mobile",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -73864,13 +74023,6 @@
     ]
   },
   {
-    "selector": "eshbel-technologies-ltd-",
-    "name": "Priority Software",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "selector": "priory-team",
     "name": "PrioryTeam",
     "reasons": [
@@ -76622,13 +76774,6 @@
     ]
   },
   {
-    "selector": "amisragas-solar",
-    "name": "Rand Energy Systems",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "selector": "randamu",
     "name": "Randamu",
     "reasons": [
@@ -78025,7 +78170,8 @@
     "selector": "repteam",
     "name": "Rep AI",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -80353,6 +80499,13 @@
     ]
   },
   {
+    "selector": "sabra-dipping-company-llc",
+    "name": "Sabra",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
     "selector": "sabress-com",
     "name": "Sabress",
     "reasons": [
@@ -81307,6 +81460,13 @@
   {
     "selector": "scala-biodesign",
     "name": "Scala Biodesign",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "scalabill-it-inc",
+    "name": "Scalabillit (changed name to Proov Inc.)",
     "reasons": [
       "h"
     ]
@@ -85121,7 +85281,7 @@
   },
   {
     "selector": "silverback.ai",
-    "name": "Silverback.ai",
+    "name": "silverback.ai",
     "reasons": [
       "h"
     ]
@@ -85535,6 +85695,13 @@
   {
     "selector": "sion-tech",
     "name": "Sion Technologies",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "sion-medical-ltd.",
+    "name": "Sion-NTR Medical Industries",
     "reasons": [
       "h"
     ]
@@ -86593,7 +86760,8 @@
     "selector": "snappy-app",
     "name": "Snappy",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -90471,7 +90639,8 @@
     "selector": "supersonic-studios",
     "name": "Supersonic Studios",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -92095,7 +92264,8 @@
     "selector": "taranis-visual",
     "name": "Taranis",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -92513,7 +92683,7 @@
   },
   {
     "selector": "tech7",
-    "name": "Tech7 venture studio",
+    "name": "Tech7",
     "reasons": [
       "h"
     ]
@@ -93527,6 +93697,13 @@
     ]
   },
   {
+    "selector": "thebox",
+    "name": "The Box",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "the-bridge-builders",
     "name": "The Builders",
     "reasons": [
@@ -93975,13 +94152,6 @@
     ]
   },
   {
-    "selector": "people-&-computers",
-    "name": "The People Productions.",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "selector": "the-place---the-jerusalem-center-for-emotional-wellbeing",
     "name": "The Place",
     "reasons": [
@@ -94032,7 +94202,7 @@
   },
   {
     "selector": "the-service-wealth-management",
-    "name": "The Service Wealth Management",
+    "name": "The Service Group",
     "reasons": [
       "h"
     ]
@@ -94826,6 +94996,13 @@
     "name": "TipRanks",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "2858966",
+    "name": "TipRanks Tel Aviv",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -98798,13 +98975,6 @@
     ]
   },
   {
-    "selector": "compulab",
-    "name": "Utilite",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "selector": "utopiafest",
     "name": "Utopia",
     "reasons": [
@@ -99690,7 +99860,8 @@
     "selector": "venn-city",
     "name": "venn",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -105014,13 +105185,6 @@
     ]
   },
   {
-    "selector": "ycd-multimedia",
-    "name": "YCD Multimedia",
-    "reasons": [
-      "f"
-    ]
-  },
-  {
     "selector": "ycon",
     "name": "Ycon",
     "reasons": [
@@ -106029,13 +106193,6 @@
     ]
   },
   {
-    "selector": "kzen-networks",
-    "name": "Zengo",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "selector": "zengold",
     "name": "Zengold",
     "reasons": [
@@ -106374,6 +106531,13 @@
   {
     "selector": "zipcom-network-communication-ltd",
     "name": "Zipcom Network Communication",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "zipory",
+    "name": "Zipory",
     "reasons": [
       "h"
     ]

@@ -1,12 +1,5 @@
 [
   {
-    "selector": "Sabra",
-    "name": "",
-    "reasons": [
-      "b"
-    ]
-  },
-  {
     "selector": "101therapeutics",
     "name": "101 Therapeutics",
     "reasons": [
@@ -717,7 +710,8 @@
     "selector": "Adallom",
     "name": "Adallom",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -2541,6 +2535,13 @@
     ]
   },
   {
+    "selector": "elasticode",
+    "name": "Apposer",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "appove",
     "name": "Appove",
     "reasons": [
@@ -2642,6 +2643,7 @@
     "selector": "appwrite",
     "name": "Appwrite",
     "reasons": [
+      "h",
       "f"
     ]
   },
@@ -4095,6 +4097,13 @@
     ]
   },
   {
+    "selector": "base_CLG",
+    "name": "Base",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "basepaws",
     "name": "Basepaws",
     "reasons": [
@@ -5099,7 +5108,8 @@
     "selector": "BlazePod",
     "name": "BlazePod Inc",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -5133,6 +5143,13 @@
   {
     "selector": "blind8app",
     "name": "Blind8",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "Blink_eSport",
+    "name": "Blink",
     "reasons": [
       "h"
     ]
@@ -6153,6 +6170,13 @@
     ]
   },
   {
+    "selector": "ycdmultimedia",
+    "name": "C-nario",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "C2A_Security",
     "name": "C2A Security",
     "reasons": [
@@ -6211,6 +6235,13 @@
   {
     "selector": "caesarstoneca",
     "name": "Caesar Stone",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "CaesarStone",
+    "name": "CaesarStone",
     "reasons": [
       "h"
     ]
@@ -9317,6 +9348,13 @@
     ]
   },
   {
+    "selector": "cyberark",
+    "name": "Cybertinel",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "CyberTogether",
     "name": "CyberTogether",
     "reasons": [
@@ -9488,7 +9526,8 @@
     "selector": "cynet360",
     "name": "Cynet",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -9914,6 +9953,13 @@
   {
     "selector": "dbMaestro",
     "name": "DBmaestro",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "Allscripts",
+    "name": "dbMotion",
     "reasons": [
       "h"
     ]
@@ -10600,6 +10646,13 @@
   {
     "selector": "DNAtixGenetics",
     "name": "DNAtix",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "FormTitan",
+    "name": "DO IT NICE",
     "reasons": [
       "h"
     ]
@@ -11526,6 +11579,13 @@
     "name": "Einblick",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "einsteinSTEM",
+    "name": "Einstein",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -12817,6 +12877,13 @@
     ]
   },
   {
+    "selector": "ExperdaDBA",
+    "name": "Experda",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "experisil",
     "name": "Experis Israel",
     "reasons": [
@@ -13548,6 +13615,7 @@
     "selector": "Finaloop1",
     "name": "Finaloop",
     "reasons": [
+      "h",
       "f"
     ]
   },
@@ -13797,6 +13865,13 @@
     ]
   },
   {
+    "selector": "FITIXco",
+    "name": "Fitix",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "fitness22apps",
     "name": "Fitness22",
     "reasons": [
@@ -14039,6 +14114,13 @@
     "name": "Flyper",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "flythq",
+    "name": "Flyt",
+    "reasons": [
+      "f"
     ]
   },
   {
@@ -14669,6 +14751,13 @@
     "name": "Funds Back",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "Fundtech",
+    "name": "Fundtech",
+    "reasons": [
+      "f"
     ]
   },
   {
@@ -16159,7 +16248,8 @@
     "selector": "Greenq_media",
     "name": "GreenQ",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -18606,6 +18696,13 @@
     ]
   },
   {
+    "selector": "SquareTalk_",
+    "name": "INNITEL",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "innobinnobi",
     "name": "INNOBI",
     "reasons": [
@@ -20216,6 +20313,13 @@
     ]
   },
   {
+    "selector": "socialbicycles",
+    "name": "JUMP Bikes",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
     "selector": "jumpcloud",
     "name": "JumpCloud",
     "reasons": [
@@ -21189,6 +21293,13 @@
     ]
   },
   {
+    "selector": "kramerelec",
+    "name": "Kramer",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "kreskofi",
     "name": "Kresko Labs",
     "reasons": [
@@ -21317,6 +21428,13 @@
   {
     "selector": "KyteraTech",
     "name": "Kytera",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "kzencorp",
+    "name": "KZen Networks",
     "reasons": [
       "h"
     ]
@@ -22568,6 +22686,13 @@
     ]
   },
   {
+    "selector": "LumenisInc",
+    "name": "Lumenis",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "lumenisinc",
     "name": "Lumenis Surgical Division",
     "reasons": [
@@ -22907,7 +23032,8 @@
     "selector": "f5networks",
     "name": "MagniFire Websystems",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -23422,6 +23548,13 @@
     ]
   },
   {
+    "selector": "umd_telaviv",
+    "name": "McCann Digital",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "mce_systems",
     "name": "mce systems",
     "reasons": [
@@ -23501,6 +23634,13 @@
   {
     "selector": "AiMedhub",
     "name": "MedHub-AI",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "itind_system",
+    "name": "Medi-Tate Ltd.",
     "reasons": [
       "h"
     ]
@@ -25000,7 +25140,8 @@
     "selector": "MotoRadUSA",
     "name": "MotoRad",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -25977,6 +26118,13 @@
     ]
   },
   {
+    "selector": "nctweets",
+    "name": "Netcraft Israel",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "NeteeraTech",
     "name": "Neteera",
     "reasons": [
@@ -26596,7 +26744,8 @@
     "selector": "notalvision",
     "name": "Notal Vision",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -27415,7 +27564,8 @@
     "selector": "DigitalOnestep",
     "name": "OneStep",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -28339,7 +28489,8 @@
     "selector": "Pagayaltd",
     "name": "Pagaya",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -28597,6 +28748,13 @@
   {
     "selector": "ridepart",
     "name": "PART",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "gocube_tech",
+    "name": "Particula",
     "reasons": [
       "h"
     ]
@@ -28969,7 +29127,8 @@
     "selector": "PerfectoMobile",
     "name": "Perfecto Mobile",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -29309,6 +29468,13 @@
     ]
   },
   {
+    "selector": "Pickpackage2",
+    "name": "PickPack",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "_pickspace_",
     "name": "Pickspace",
     "reasons": [
@@ -29367,6 +29533,13 @@
   {
     "selector": "PimaAlarms",
     "name": "PIMA Electronic Systems",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "_PineApp_",
+    "name": "PineApp",
     "reasons": [
       "h"
     ]
@@ -29787,6 +29960,13 @@
   {
     "selector": "pluralis_CRO",
     "name": "Pluralis",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "pluribiotech",
+    "name": "Pluri",
     "reasons": [
       "h"
     ]
@@ -31986,7 +32166,8 @@
     "selector": "TeamRepAI",
     "name": "Rep AI",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -33054,6 +33235,13 @@
     ]
   },
   {
+    "selector": "Sabra",
+    "name": "Sabra",
+    "reasons": [
+      "b"
+    ]
+  },
+  {
     "selector": "safearthtech",
     "name": "SafEarth",
     "reasons": [
@@ -33469,6 +33657,13 @@
   {
     "selector": "SCADAfence",
     "name": "SCADAfence",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "Scalabillit",
+    "name": "Scalabillit (changed name to Proov Inc.)",
     "reasons": [
       "h"
     ]
@@ -34650,6 +34845,13 @@
     ]
   },
   {
+    "selector": "sheba_medical",
+    "name": "Sheba Medical Center",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "shefagems",
     "name": "Shefa Gems",
     "reasons": [
@@ -34750,6 +34952,13 @@
   {
     "selector": "shlomosixt",
     "name": "Shlomo Group",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "SIXTIsrael",
+    "name": "Shlomo Sixt",
     "reasons": [
       "h"
     ]
@@ -35752,7 +35961,8 @@
     "selector": "snappygift",
     "name": "Snappy",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -37530,7 +37740,8 @@
     "selector": "playsupersonic",
     "name": "Supersonic Studios",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -38356,7 +38567,8 @@
     "selector": "taranisag",
     "name": "Taranis",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
@@ -38530,6 +38742,13 @@
   {
     "selector": "TechTav",
     "name": "Tech-Tav Documentation",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "tech7il",
+    "name": "Tech7",
     "reasons": [
       "h"
     ]
@@ -38924,6 +39143,13 @@
     "name": "The Bouqs Company",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "theboxsite",
+    "name": "The Box",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -41618,7 +41844,8 @@
     "selector": "venn39565486",
     "name": "venn",
     "reasons": [
-      "f"
+      "f",
+      "h"
     ]
   },
   {
