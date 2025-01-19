@@ -11,19 +11,19 @@ export const TRANSLATIONS = {
   },
   reasonUrlIL: {
     en: "This Url ends with .il, This means it's an Israeli website!",
-    ar: "هذا الموقع من الكيان الصهيوني لأنه ينتهي ب .il"
+    ar: "هذا الموقع من الكيان الصهيوني لأنه ينتهي بـ .il"
   },
   reasonFounder: {
     en: "One or more founders/investors of $1 are connected to Israel!",
-    ar: "تنبيه: أحد المستثمرين او المؤسسين ل $1 من الكيان الصهيوني!"
+    ar: "تنبيه: أحد المستثمرين أو المؤسسين لـ $1 من الكيان الصهيوني"
   },
   reasonHeadquarter: {
     en: "$1 headquarters is in Israel.",
-    ar: "المقر الرئيسي ل$1 يقع في الكيان الصهيوني."
+    ar: "المقر الرئيسي لـ $1 يقع في الكيان الصهيوني."
   },
   reasonBDS: {
     en: "$1 is listed on the BDS Boycott list",
-    ar: "$1 BDS مدرج في قائمة المقاطعة "
+    ar: "تنبيه: $1 مدرج في قائمة المقاطعة الخاصة بحركة BDS"
   },
   modalShareMobileImage: {
     en: "Share image",
@@ -31,7 +31,7 @@ export const TRANSLATIONS = {
   },
   modalShareButton: {
     en: "Share",
-    ar: "أنشر"
+    ar: "انشر"
   },
   buttomBarButtonReport: {
     en: "Report mistake!",
@@ -39,10 +39,10 @@ export const TRANSLATIONS = {
   },
   modalDismissSession: {
     en: "Allow this time",
-    ar: "سماح مرة"
+    ar: "السماح مرة واحدة"
   },
   sharingMessageText: {
     en: 'I avoided an Israeli website by using "The wall - Boycott assistant" browser addon. Try it!',
-    ar: 'لقد تجنبت موقع للكيان الصهيوني بإستخدام أضافة "الجدار". جربه الأن!'
+    ar: 'لقد تجنبت موقعًا تابعًا للكيان الصهيوني باستخدام إضافة "الجدار". جرّبه الآن!'
   }
 } satisfies TransDB
