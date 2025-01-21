@@ -2,7 +2,7 @@
   display: flex;
   /* font-family: "Hardshock"; */
   font-family: "JimmyCollins", "FFBouya-Normal";
-  font-size: 3rem;
+  font-size: 2rem;
   /* position: fixed; */
   width: 100vw;
   height: 100vh;
@@ -105,11 +105,11 @@
 
 @media (min-width: 768px) {
   .container {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
   .container.ar {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .modalContainer {
     width: 70vw;
@@ -118,7 +118,7 @@
 
 @media (min-width: 1024px) {
   .container {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .container.ar {
     font-size: 4rem;

@@ -84,7 +84,7 @@ const testTabUrl = async (tabId: number, url: string) => {
     })
     // .then((result) => {
     log("chrome.tabs.sendMessage promise success", msgResult)
-  }, 4000)
+  }, 2000)
 
   // }, 10000)
 
