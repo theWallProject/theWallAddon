@@ -8,6 +8,7 @@ import backgroundImage from "../../assets/images/wall2.jpg"
 // import { share } from "../image_sharing/image"
 import { ShareButton } from "../share_button/ShareButton"
 import { MessageTypes, type Message, type MessageResponseMap } from "../types"
+import { Scene } from "./3d/scene"
 import { Button } from "./Button"
 // import { GraffitiEffect } from "./GraffitiEffect"
 
@@ -130,6 +131,11 @@ export const Banner = () => {
           </div>
         </div>
       </div>
+
+      <div style={{ width: "100%", height: "100vh" }}>
+        <Scene />
+      </div>
+
       <div className={style.bottomBar}>
         <Button
           title={chrome.i18n.getMessage("buttomBarButtonReport")}
