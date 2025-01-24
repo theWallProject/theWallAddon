@@ -64,6 +64,9 @@ export const Banner = () => {
           backgroundImage: `url(${backgroundImage})`
         }}
       />
+      <div style={{ width: "100%", height: "100vh" }}>
+        <Scene />
+      </div>
       <img
         src={theWallBlack}
         className={style.theWallLogo}
@@ -130,10 +133,6 @@ export const Banner = () => {
             />
           </div>
         </div>
-      </div>
-
-      <div style={{ width: "100%", height: "100vh" }}>
-        <Scene />
       </div>
 
       <div className={style.bottomBar}>
