@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"
 
 // @ts-expect-error
-import theWallWhite from "../../assets/images/the-wall-white.png"
+import backgroundImage from "../../assets/images/flag-bg.jpg"
 // @ts-expect-error
-import backgroundImage from "../../assets/images/wall2.jpg"
+import theWallWhite from "../../assets/images/the-wall-white.png"
 // import { log, warn } from "../helpers"
 // import { share } from "../image_sharing/image"
 import { ShareButton } from "../share_button/ShareButton"

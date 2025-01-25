@@ -10,10 +10,12 @@ const ANIMATION_START = {
 }
 
 const ANIMATION_END = {
-  position: new Vector3(0, 5, -4),
+  position: new Vector3(0, 4, -4),
   rotation: new Euler(0, Math.PI * 2, 0),
   scale: new Vector3(0.02, 0.02, 0.02)
 }
+
+const SCALE_MULTIPLIER = 0.00005
 
 type UseAnimatedGLTFProps = {
   glbPath: string
@@ -69,6 +71,19 @@ const useAnimatedGLTF = ({ glbPath, isActive }: UseAnimatedGLTFProps) => {
       tweenRef.current?.kill()
     }
   }, [])
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (groupRef.current) {
+  //       const newScale =
+  //         Math.min(window.innerWidth, window.innerHeight) * SCALE_MULTIPLIER
+  //       groupRef.current.scale.set(newScale, newScale, newScale)
+  //     }
+  //   }
+
+  //   window.addEventListener("resize", handleResize)
+  //   return () => window.removeEventListener("resize", handleResize)
+  // }, [])
 
   useEffect(() => {
     if (!tweenRef.current) return

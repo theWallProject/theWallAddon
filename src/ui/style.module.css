@@ -2,7 +2,7 @@
   display: flex;
   /* font-family: "Hardshock"; */
   /* font-family: "JimmyCollins", "FFBouya-Normal"; */
-  font-size: 2rem;
+  font-size: 1.5rem;
   /* position: fixed; */
   width: 100vw;
   height: 100vh;
@@ -19,7 +19,7 @@
 
 .bgLayer {
   /* opacity: 0.7; */
-  background-position: right;
+  /* background-position: right; */
   /* background-size: cover; */
   width: 100vw;
   height: 100vh;
@@ -27,8 +27,8 @@
   top: 0;
   left: 0;
   background-size: cover;
-  filter: brightness(0.4);
-  opacity: 0.8;
+  /* filter: brightness(0.4); */
+  opacity: 0.7;
   /* z-index: 999999999 !important; */
 }
 
@@ -44,12 +44,13 @@
 
 .modalContainer {
   color: #000;
-  /* width: 46vw; */
+  max-width: 300px;
   min-width: 200px;
-  min-height: 250px;
+  top: 200px;
+
+  /* min-height: 250px; */
   transition: opacity 0.5s;
   position: fixed;
-  top: 350px;
   box-shadow: 3px 3px 41px #7e7e7e;
   background-color: #1b1b1b;
   pointer-events: none;
@@ -88,7 +89,7 @@
   align-items: center;
   margin-right: 1rem;
   font-family: inherit;
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: box-shadow 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
   display: flex;
   box-shadow: 3px 2px 7px red;
@@ -120,19 +121,29 @@
   .container.ar {
     font-size: 2rem;
   }
-  /* .modalContainer {
-    width: 70vw;
-  } */
+  .modalContainer {
+    min-width: 400px;
+    max-width: 600px;
+    top: 260px;
+  }
+  .button {
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .container {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .container.ar {
     font-size: 4rem;
   }
+  .modalContainer {
+    min-width: 500px;
+    max-width: 700px;
+    top: 350px;
+  }
   .button {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
