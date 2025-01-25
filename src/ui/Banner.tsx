@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 
 // @ts-expect-error
-import theWallBlack from "../../assets/images/the-wall-white.png"
+import theWallWhite from "../../assets/images/the-wall-white.png"
 // @ts-expect-error
 import backgroundImage from "../../assets/images/wall2.jpg"
 // import { log, warn } from "../helpers"
@@ -15,6 +15,9 @@ import { Button } from "./Button"
 import style from "./style.module.css"
 
 export const Banner = () => {
+  const [isSharing, setIsSharing] = useState(false)
+  const [isSkipping, setIsSkipping] = useState(false)
+
   const [testResult, setTestResult] =
     useState<MessageResponseMap[MessageTypes.TestUrl]>()
 
@@ -34,7 +37,7 @@ export const Banner = () => {
 
   const handleReportMistakeClick = () => {
     const currentUrl = window.location.href
-    const mailtoLink = `mailto:the.watermelon.project@gmail.com?subject=Error Report&body=${encodeURIComponent(currentUrl)}`
+    const mailtoLink = `mailto:the.wall.addon@proton.me?subject=Error Report&body=${encodeURIComponent(currentUrl)}`
     window.open(mailtoLink, "_blank")
   }
 
@@ -64,11 +67,18 @@ export const Banner = () => {
           backgroundImage: `url(${backgroundImage})`
         }}
       />
-      <div style={{ width: "100%", height: "100vh" }}>
-        <Scene />
+      <div
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh"
+        }}>
+        <Scene isSharing={isSharing} isSkipping={isSkipping} />
       </div>
       <img
-        src={theWallBlack}
+        src={theWallWhite}
         className={style.theWallLogo}
         alt="The Wall Logo"
       />
@@ -120,6 +130,8 @@ export const Banner = () => {
             <ShareButton
               text={chrome.i18n.getMessage("sharingMessageText")}
               url={"https://thewallproject.github.io"}
+              onMouseEnter={() => setIsSharing(true)}
+              onMouseLeave={() => setIsSharing(false)}
             />
 
             <Button
@@ -130,6 +142,8 @@ export const Banner = () => {
                   testResult.rule.selector
                 )
               }
+              onMouseEnter={() => setIsSkipping(true)}
+              onMouseLeave={() => setIsSkipping(false)}
             />
           </div>
         </div>

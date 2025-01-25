@@ -14,9 +14,16 @@ import styles from "./ShareButton.module.css"
 interface ShareButtonProps {
   text: string
   url?: string
+  onMouseEnter?: () => void
+  onMouseLeave?: () => void
 }
 
-export const ShareButton: React.FC<ShareButtonProps> = ({ text, url }) => {
+export const ShareButton: React.FC<ShareButtonProps> = ({
+  text,
+  url,
+  onMouseEnter,
+  onMouseLeave
+}) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const encodedText = encodeURIComponent(text)
@@ -30,7 +37,9 @@ export const ShareButton: React.FC<ShareButtonProps> = ({ text, url }) => {
     <div className={styles.shareButtonContainer}>
       <Button
         onClick={toggleDropdown}
-        title={chrome.i18n.getMessage("modalShareButton")}></Button>
+        title={chrome.i18n.getMessage("modalShareButton")}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}></Button>
 
       {isOpen && (
         <div className={styles.dropdown}>

@@ -1,7 +1,7 @@
 .container {
   display: flex;
   /* font-family: "Hardshock"; */
-  font-family: "JimmyCollins", "FFBouya-Normal";
+  /* font-family: "JimmyCollins", "FFBouya-Normal"; */
   font-size: 2rem;
   /* position: fixed; */
   width: 100vw;
@@ -9,6 +9,8 @@
   align-items: center;
   justify-content: center;
   transition: opacity 0.5s ease;
+  /* position: fixed;
+  z-index: 999999999; */
 }
 
 .ar {
@@ -26,29 +28,36 @@
   left: 0;
   background-size: cover;
   filter: brightness(0.4);
+  opacity: 0.8;
   /* z-index: 999999999 !important; */
 }
 
 .theWallLogo {
-  opacity: 0.5;
+  opacity: 0.9;
   width: 19vw;
   position: fixed;
   bottom: 0;
+
   left: 0;
   filter: drop-shadow(0px 0px 5px black);
 }
 
 .modalContainer {
   color: #000;
-  width: 46vw;
-  min-width: 300px;
+  /* width: 46vw; */
+  min-width: 200px;
+  min-height: 250px;
   transition: opacity 0.5s;
   position: fixed;
-  top: 20vh;
+  top: 350px;
   box-shadow: 3px 3px 41px #7e7e7e;
+  background-color: #1b1b1b;
+  pointer-events: none;
+  opacity: 0.95;
 }
 
 .buttonsWrapper {
+  pointer-events: all;
   position: absolute;
   display: flex;
   bottom: 10;
@@ -111,9 +120,9 @@
   .container.ar {
     font-size: 2rem;
   }
-  .modalContainer {
+  /* .modalContainer {
     width: 70vw;
-  }
+  } */
 }
 
 @media (min-width: 1024px) {

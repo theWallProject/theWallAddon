@@ -1,4 +1,4 @@
-import { log } from "../helpers"
+import { error, log } from "../helpers"
 // @ts-expect-error
 import image from "./template.jpg"
 
@@ -20,7 +20,10 @@ async function generateImageWithText(
       // Create canvas after image is loaded
       const canvas = document.createElement("canvas")
       const ctx = canvas.getContext("2d")
-
+      if (!ctx) {
+        error("Canvas context not supported")
+        return
+      }
       // Set canvas size based on image size
       canvas.width = img.width
       canvas.height = img.height
