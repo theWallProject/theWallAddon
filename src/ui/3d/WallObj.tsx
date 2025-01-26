@@ -13,9 +13,7 @@ const MAX_ROTATION_X = 0.2
 // const SCALE_MULTIPLIER = 0.001
 
 const WallObj = () => {
-  const { scene } = useGLTF(
-    chrome.runtime.getURL("public/3d/concrete_fence/scene.gltf")
-  )
+  const { scene } = useGLTF(chrome.runtime.getURL("public/3d/wall.glb"))
   const wallRef = useRef<Group>(null)
   const mousePosition = useRef({ x: 0, y: 0 })
   const lastRotation = useRef({ x: INITIAL_X_ROTATION, y: INITIAL_Y_ROTATION })

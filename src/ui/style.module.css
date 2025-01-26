@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  /* font-family: "Hardshock"; */
+  font-family: sans-serif;
   /* font-family: "JimmyCollins", "FFBouya-Normal"; */
   font-size: 1.5rem;
   /* position: fixed; */
@@ -13,9 +13,9 @@
   z-index: 999999999; */
 }
 
-/* .ar {
-  font-size: 1rem;
-} */
+.ar {
+  /* font-size: 1rem; */
+}
 
 .bgLayer {
   /* opacity: 0.7; */
