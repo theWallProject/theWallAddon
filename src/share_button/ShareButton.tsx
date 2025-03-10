@@ -42,7 +42,13 @@ export const ShareButton: React.FC<ShareButtonProps> = ({
         onMouseLeave={onMouseLeave}></Button>
 
       {isOpen && (
-        <div className={styles.dropdown}>
+        <div
+          className={styles.dropdown}
+          style={
+            chrome.i18n.getMessage("@@bidi_dir") === "ltr"
+              ? { left: 0 }
+              : { right: 0 }
+          }>
           {/* //todo: enable image sharing */}
           {/* {navigator.canShare && (
             <div className={styles.shareOption}>

@@ -9,8 +9,7 @@
   align-items: center;
   justify-content: center;
   transition: opacity 0.5s ease;
-  /* position: fixed;
-  z-index: 999999999; */
+  position: fixed;
 }
 
 .ar {
@@ -28,7 +27,7 @@
   left: 0;
   background-size: cover;
   /* filter: brightness(0.4); */
-  opacity: 0.7;
+  opacity: 0.95;
   /* z-index: 999999999 !important; */
 }
 
@@ -46,11 +45,11 @@
   color: #000;
   max-width: 300px;
   min-width: 200px;
-  top: 200px;
+  /* top: 370px; */
 
   /* min-height: 250px; */
   transition: opacity 0.5s;
-  position: fixed;
+  position: absolute;
   box-shadow: 3px 3px 41px #7e7e7e;
   background-color: #1b1b1b;
   opacity: 0.95;
@@ -100,13 +99,9 @@
 }
 
 .bottomBar {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 10px;
-  display: flex;
   position: fixed;
-  bottom: 40px;
+  bottom: 50px;
+  right: 50px;
 }
 
 @media (min-width: 768px) {
@@ -120,7 +115,7 @@
   .modalContainer {
     min-width: 400px;
     max-width: 600px;
-    top: 260px;
+    /* top: 360px; */
   }
   .button {
     font-size: 1.5rem;
@@ -137,7 +132,7 @@
   .modalContainer {
     min-width: 500px;
     max-width: 700px;
-    top: 350px;
+    /* top: 450px; */
   }
   .button {
     font-size: 1.6rem;

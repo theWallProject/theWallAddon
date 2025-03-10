@@ -45,7 +45,10 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
   }
 
   return new Promise(async (resolve, reject) => {
-    const ruleForDomain = CONFIG.rules.find((rule) => rule.domain === domain)
+    const ruleForDomain = CONFIG.rules.find((rule) => {
+      const regexTest = new RegExp(rule.regex)
+      return regexTest.test(url)
+    })
 
     if (ruleForDomain) {
       log("storage: isUrlFlagged [rule]", { ruleForDomain })
