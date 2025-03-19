@@ -1,12 +1,12 @@
 {
   "name": "@thewall/addon",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "author": "theWall",
   "scripts": {
     "type-check": "tsc --noEmit",
     "trans": "node --loader ts-node/esm TRANSLATIONS/generate.ts",
     "dev": "npm run pre-build && plasmo dev",
-    "build": "npm run pre-build && npm run build:chrome && npm run build:ff && npm run build:edge && npm run build:opera && npm run build:ff-src",
+    "build": "npm run pre-build && npm run build:chrome && npm run build:ff && npm run build:edge && npm run build:opera",
     "build:chrome": "plasmo build",
     "build:ff": "plasmo build --target=firefox-mv2",
     "build:edge": "plasmo build --target=edge-mv3",
