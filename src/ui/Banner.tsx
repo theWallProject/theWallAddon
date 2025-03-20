@@ -13,6 +13,14 @@ import { Button } from "./Button"
 // import { GraffitiEffect } from "./GraffitiEffect"
 
 import style from "./style.module.css"
+import { TextScramble } from "./TextScramble"
+
+const messages = [
+  "Psst...",
+  "Please share the addon",
+  "Help us reach 5000 users 🚀",
+  ""
+]
 
 export const Banner = () => {
   const [isSharing, setIsSharing] = useState(false)
@@ -157,6 +165,13 @@ export const Banner = () => {
           onClick={handleReportMistakeClick}
         />
       </div>
+
+      <TextScramble
+        texts={messages}
+        interval={3000}
+        speed={1}
+        className="scramble-text"
+      />
     </div>
   ) : (
     <></>

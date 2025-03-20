@@ -1,7 +1,10 @@
 /* ShareButton.module.css */
 .shareButtonContainer {
-  position: relative;
+  /* position: relative; */
   display: inline-block;
+  position: fixed;
+  bottom: 12vh;
+  left: 5vw;
 }
 
 .shareButton {
@@ -50,7 +53,7 @@
 }
 
 .shareOption a:hover {
-  background-color: #f0f0f0;
+  background-color: #5e5e5e;
 }
 
 .shareOption svg {
