@@ -14,6 +14,40 @@ import { error, getMainDomain, log } from "./helpers"
 import { getStorageItem } from "./storageHelpers"
 import { type UrlTestResult } from "./types"
 
+const ONE_MIN = 60 * 1000
+const ONE_MONTH = 30 * 24 * 60 * ONE_MIN
+
+const checkIsDissmissed = async (testKey: string) => {
+  let isDismissed: boolean
+
+  try {
+    const dismissedTS = await getStorageItem<number>(testKey)
+
+    if (dismissedTS) {
+      //compare dismissedTS which is a timestamp to see if it is older than 1 month
+      const now = new Date()
+      const difference = new Date(now.getTime() - dismissedTS)
+
+      if (difference.getTime() < ONE_MONTH) {
+        log(`${testKey} was dismissed less than 1 month ago, keep dissmissed`)
+        isDismissed = true
+      } else {
+        log(
+          `${testKey} was dismissed longer than a month ago, not dismissing anymore`
+        )
+        isDismissed = false
+      }
+    } else {
+      isDismissed = false
+    }
+  } catch (e) {
+    error(`isUrlFlagged getStorageItem failed for key ${testKey}`)
+    isDismissed = false
+  }
+
+  return isDismissed
+}
+
 export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
   log(`storage: isUrlFlagged ${url}`)
 
@@ -21,15 +55,7 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
 
   if (domain.endsWith(".il")) {
     const localTestKey = `isr_url_${domain}`
-
-    let isDismissed: boolean
-
-    try {
-      isDismissed = !!(await getStorageItem<boolean>(localTestKey))
-    } catch (e) {
-      error(`isUrlFlagged getStorageItem failed for key ${localTestKey}`)
-      isDismissed = false
-    }
+    const isDismissed = await checkIsDissmissed(localTestKey)
 
     return new Promise((resolve) => {
       resolve({
@@ -63,22 +89,10 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
 
       if (selector) {
         const localTestKey = `${ruleForDomain.fileName}_${selector}`
-        log(`checking ${localTestKey} for dismissal`)
 
-        let isDismissed: boolean
-
-        try {
-          isDismissed = !!(await getStorageItem<boolean>(localTestKey))
-          log(
-            `isUrlFlagged getStorageItem for key ${localTestKey} result:${isDismissed}`
-          )
-        } catch (e) {
-          error(`isUrlFlagged getStorageItem failed for key ${localTestKey}`)
-          isDismissed = false
-        }
+        const isDismissed = await checkIsDissmissed(localTestKey)
 
         if (isDismissed) {
-          log(`${localTestKey} was dismissed before!`)
           resolve({
             isDismissed: true,
             // reasons and name dont matter here
@@ -144,14 +158,8 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
       if (findResult) {
         const localTestKey = `${DBFileNames.FLAGGED}_${domain}`
 
-        let isDismissed: boolean
+        const isDismissed = await checkIsDissmissed(localTestKey)
 
-        try {
-          isDismissed = !!(await getStorageItem<boolean>(localTestKey))
-        } catch (e) {
-          error(`isUrlFlagged getStorageItem failed for key ${localTestKey}`)
-          isDismissed = false
-        }
         resolve({
           isDismissed,
           ...findResult,

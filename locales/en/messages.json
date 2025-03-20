@@ -24,12 +24,12 @@
     "message": "Share"
   },
   "buttomBarButtonReport": {
-    "message": "Report mistake!"
+    "message": "Report mistake"
   },
   "modalDismissSession": {
-    "message": "Allow this time"
+    "message": "Allow for a month"
   },
   "sharingMessageText": {
-    "message": "I avoided an Israeli website by using \"The wall - Boycott assistant\" browser addon. Try it!"
+    "message": "I avoided an Israeli website by using \"The Wall - Boycott assistant\" browser addon. Try it!"
   }
 }

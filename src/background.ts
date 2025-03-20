@@ -197,7 +197,8 @@ chrome.runtime.onMessage.addListener(
       })
     } else if (action === MessageTypes.DissmissUrl) {
       const key = `${message.fileName}_${message.selector}`
-      setStorageItem(key, true).then(() => {
+      const now = Date.now()
+      setStorageItem(key, now).then(() => {
         log(`chrome.runtime.onMessage setStorageItem succes of key ${key}`)
 
         sendResponse(true)
