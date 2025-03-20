@@ -30,7 +30,9 @@ export const Banner = () => {
       },
       (response) => {
         // log("onDismissSessionClick: Response from background:", response)
-        setTestResult(undefined)
+        setTimeout(() => {
+          setTestResult(undefined)
+        }, 1000)
       }
     )
   }
@@ -129,7 +131,7 @@ export const Banner = () => {
           <div className={style.buttonsWrapper}>
             <ShareButton
               text={chrome.i18n.getMessage("sharingMessageText")}
-              url={"https://thewallproject.github.io"}
+              url={"https://the-wall.win"}
               onMouseEnter={() => setIsSharing(true)}
               onMouseLeave={() => setIsSharing(false)}
             />

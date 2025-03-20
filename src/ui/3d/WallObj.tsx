@@ -60,7 +60,7 @@ const WallObj = () => {
     <primitive
       ref={wallRef}
       object={scene}
-      position={[0, -2, -3]}
+      position={[0, -2, 0]}
       // onClick={() => console.log("Wall clicked!")}
     />
   )

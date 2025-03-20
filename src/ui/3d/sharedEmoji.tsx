@@ -4,18 +4,18 @@ import { useEffect, useRef } from "react"
 import { Euler, Group, Vector3 } from "three"
 
 const ANIMATION_START = {
-  position: new Vector3(0, 0, -4),
+  position: new Vector3(0, 0, -2),
   rotation: new Euler(0, 0, 0),
   scale: new Vector3(0.01, 0.01, 0.01)
 }
 
 const ANIMATION_END = {
-  position: new Vector3(0, 4, -4),
+  position: new Vector3(0, 1.7, 1),
   rotation: new Euler(0, Math.PI * 2, 0),
   scale: new Vector3(0.02, 0.02, 0.02)
 }
 
-const SCALE_MULTIPLIER = 0.00005
+// const SCALE_MULTIPLIER = 0.00005
 
 type UseAnimatedGLTFProps = {
   glbPath: string
