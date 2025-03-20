@@ -29,6 +29,9 @@
   "modalDismissSession": {
     "message": "允许一个月"
   },
+  "modalSupportPalestine": {
+    "message": "支持巴勒斯坦"
+  },
   "sharingMessageText": {
     "message": "我通过使用“赛博锡安之壁 - 极端复国主义抵制助手”浏览器插件避免了一个以色列网站。试试看！"
   }

@@ -10,7 +10,7 @@ const ANIMATION_START = {
 }
 
 const ANIMATION_END = {
-  position: new Vector3(0, 1.7, 1),
+  position: new Vector3(0, 1.4, 1.11),
   rotation: new Euler(0, Math.PI * 2, 0),
   scale: new Vector3(0.02, 0.02, 0.02)
 }

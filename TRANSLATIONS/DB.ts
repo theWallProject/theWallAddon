@@ -76,6 +76,12 @@ export const TRANSLATIONS = {
     zh_CN: "允许一个月",
     zh_TW: "允许一个月"
   },
+  modalSupportPalestine: {
+    en: "Support Palestine",
+    ar: "إدعم فلسطين",
+    zh_CN: "支持巴勒斯坦",
+    zh_TW: "支持巴勒斯坦"
+  },
   sharingMessageText: {
     en: 'I avoided an Israeli website by using "The Wall - Boycott assistant" browser addon. Try it!',
     ar: 'لقد تجنبت موقعًا تابعًا للكيان الصهيوني باستخدام إضافة "الجدار". جرّبه الآن!',

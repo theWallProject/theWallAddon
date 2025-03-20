@@ -1,4 +1,4 @@
-import { useAnimatedGLTF } from "./sharedEmoji"
+import { useAnimatedGLTF } from "./useAnimatedGLTF"
 
 const LoveEmojiObj = ({ isActive }: { isActive: boolean }) => {
   const { scene, groupRef } = useAnimatedGLTF({

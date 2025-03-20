@@ -36,7 +36,7 @@ export const Banner = () => {
         fileName,
         selector
       },
-      (response) => {
+      (response: unknown) => {
         // log("onDismissSessionClick: Response from background:", response)
         setTimeout(() => {
           setTestResult(undefined)
@@ -154,6 +154,21 @@ export const Banner = () => {
               }
               onMouseEnter={() => setIsSkipping(true)}
               onMouseLeave={() => setIsSkipping(false)}
+              btnStyle={{
+                boxShadow: "3px 2px 7px #c72222"
+              }}
+            />
+
+            <Button
+              title={chrome.i18n.getMessage("modalSupportPalestine")}
+              onClick={() => {
+                window.location.href = "https://techforpalestine.org"
+              }}
+              onMouseEnter={() => setIsSharing(true)}
+              onMouseLeave={() => setIsSharing(false)}
+              btnStyle={{
+                boxShadow: "3px 2px 7px #74d136"
+              }}
             />
           </div>
         </div>

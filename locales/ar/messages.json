@@ -29,6 +29,9 @@
   "modalDismissSession": {
     "message": "السماح لمدة شهر"
   },
+  "modalSupportPalestine": {
+    "message": "إدعم فلسطين"
+  },
   "sharingMessageText": {
     "message": "لقد تجنبت موقعًا تابعًا للكيان الصهيوني باستخدام إضافة \"الجدار\". جرّبه الآن!"
   }

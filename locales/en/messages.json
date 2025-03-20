@@ -29,6 +29,9 @@
   "modalDismissSession": {
     "message": "Allow for a month"
   },
+  "modalSupportPalestine": {
+    "message": "Support Palestine"
+  },
   "sharingMessageText": {
     "message": "I avoided an Israeli website by using \"The Wall - Boycott assistant\" browser addon. Try it!"
   }
