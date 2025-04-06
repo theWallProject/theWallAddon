@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react"
+import { set } from "zod"
+
+import { track } from "~helpers"
 
 // @ts-expect-error
 import backgroundImage from "../../assets/images/flag-bg.jpg"
@@ -46,8 +49,11 @@ export const Banner = () => {
   }
 
   const handleReportMistakeClick = () => {
+    track("Button", "Click", "report_mistake")
+
     const currentUrl = window.location.href
     const mailtoLink = `mailto:the.wall.addon@proton.me?subject=Error Report&body=${encodeURIComponent(currentUrl)}`
+
     window.open(mailtoLink, "_blank")
   }
 
@@ -71,6 +77,7 @@ export const Banner = () => {
     <div
       className={`${style.container} ${chrome.i18n.getMessage("@@ui_locale").includes("ar") ? style.ar : ""}`}
       dir={chrome.i18n.getMessage("@@bidi_dir")}>
+      <img src="https://the-wall.win/bg.gif?rec=1&action_name=wall" alt="" />
       <div
         className={style.bgLayer}
         style={{
@@ -146,12 +153,14 @@ export const Banner = () => {
 
             <Button
               title={chrome.i18n.getMessage("modalDismissSession")}
-              onClick={() =>
+              onClick={() => {
+                track("Button", "Click", "allow_month")
+
                 onDismissSessionClick(
                   testResult.rule.db,
                   testResult.rule.selector
                 )
-              }
+              }}
               onMouseEnter={() => setIsSkipping(true)}
               onMouseLeave={() => setIsSkipping(false)}
               btnStyle={{
@@ -162,7 +171,11 @@ export const Banner = () => {
             <Button
               title={chrome.i18n.getMessage("modalSupportPalestine")}
               onClick={() => {
-                window.location.href = "https://techforpalestine.org"
+                track("Button", "Click", "support_pal")
+
+                setTimeout(() => {
+                  window.location.href = "https://techforpalestine.org"
+                }, 500)
               }}
               onMouseEnter={() => setIsSharing(true)}
               onMouseLeave={() => setIsSharing(false)}
