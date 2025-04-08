@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import { set } from "zod"
 
 import { track } from "~helpers"
 
@@ -81,6 +80,7 @@ export const Banner = () => {
       <div
         className={style.bgLayer}
         style={{
+          backgroundColor: "#121212",
           backgroundImage: `url(${backgroundImage})`
         }}
       />
