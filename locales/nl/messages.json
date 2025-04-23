@@ -1,0 +1,38 @@
+{
+  "extensionName": {
+    "message": "The wall - Boycott assistent"
+  },
+  "extensionDescription": {
+    "message": "Zet meer dan 19.000 Boycot-waardige bedrijven achter een muur 🧱"
+  },
+  "reasonUrlIL": {
+    "message": "Deze Url eindigt op .il, wat betekent dat het een Israëlische website is!"
+  },
+  "reasonFounder": {
+    "message": "Een of meer oprichters/investeerders van $1 hebben banden met Israël!"
+  },
+  "reasonHeadquarter": {
+    "message": "Het hoofdkantoor van $1 bevindt zich in Israël."
+  },
+  "reasonBDS": {
+    "message": "$1 staat op de BDS-Boycotlijst"
+  },
+  "modalShareMobileImage": {
+    "message": "Afbeelding delen"
+  },
+  "modalShareButton": {
+    "message": "Delen"
+  },
+  "buttomBarButtonReport": {
+    "message": "Fout melden"
+  },
+  "modalDismissSession": {
+    "message": "Toestaan gedurende een maand"
+  },
+  "modalSupportPalestine": {
+    "message": "Steun Palestina"
+  },
+  "sharingMessageText": {
+    "message": "Ik heb een Israëlische website vermeden door de browser addon \"The Wall - Boycott assistant\" te gebruiken. Probeer het eens!"
+  }
+}
