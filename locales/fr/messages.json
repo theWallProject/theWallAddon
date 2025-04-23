@@ -1,0 +1,38 @@
+{
+  "extensionName": {
+    "message": "The wall - Assistant de boycott"
+  },
+  "extensionDescription": {
+    "message": "Mettre derrière un mur plus de 19 000 entreprises méritant d'être boycottées 🧱"
+  },
+  "reasonUrlIL": {
+    "message": "Cette URL se termine par .il, ce qui signifie qu'il s'agit d'un site web israélien !"
+  },
+  "reasonFounder": {
+    "message": "Un ou plusieurs fondateurs/investisseurs de $1 sont liés à Israël !"
+  },
+  "reasonHeadquarter": {
+    "message": "Le siège de $1 se trouve en Israël."
+  },
+  "reasonBDS": {
+    "message": "$1 figure sur la liste du boycott BDS"
+  },
+  "modalShareMobileImage": {
+    "message": "Partager l'image"
+  },
+  "modalShareButton": {
+    "message": "Partager"
+  },
+  "buttomBarButtonReport": {
+    "message": "Signaler une erreur"
+  },
+  "modalDismissSession": {
+    "message": "Prévoir un mois"
+  },
+  "modalSupportPalestine": {
+    "message": "Soutenir la Palestine"
+  },
+  "sharingMessageText": {
+    "message": "J'ai évité un site web israélien en utilisant le module complémentaire de navigateur « The Wall - Boycott assistant ». Essayez-le!"
+  }
+}
