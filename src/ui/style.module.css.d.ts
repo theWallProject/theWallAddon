@@ -1,5 +1,4 @@
 declare const styles: {
-  readonly "ar": string;
   readonly "bgLayer": string;
   readonly "bottomBar": string;
   readonly "button": string;
