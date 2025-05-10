@@ -24,6 +24,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "@react-three/drei": "^9.121.3",
     "@react-three/fiber": "^8.17.12",
     "@theWallProject/addonCommon": "github:theWallProject/addonCommon",
