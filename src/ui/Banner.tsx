@@ -74,7 +74,7 @@ export const Banner = () => {
 
   return testResult && !testResult.isDismissed ? (
     <div
-      className={`${style.container} ${chrome.i18n.getMessage("@@ui_locale").includes("ar") ? style.ar : ""}`}
+      className={style.container}
       dir={chrome.i18n.getMessage("@@bidi_dir")}>
       <img src="https://the-wall.win/bg.gif?rec=1&action_name=wall" alt="" />
       <div
