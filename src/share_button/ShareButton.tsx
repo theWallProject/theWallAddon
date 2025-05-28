@@ -1,7 +1,7 @@
 import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook"
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin"
 import { FaTelegram } from "@react-icons/all-files/fa/FaTelegram"
-import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter"
+import { FaXTwitter } from "@react-icons/all-files/fa/FaXTwitter"
 import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp"
 import React from "react"
 
@@ -85,12 +85,12 @@ export const ShareButton: React.FC<ShareButtonProps> = ({
               track("Button", "Click", "share_tw")
 
               window.open(
-                `https://twitter.com/intent/tweet?text=${encodedText}&url=${encodedUrl}`,
+               https://x.com/intent/post?text=${encodedText}&url=${encodedUrl}`,
                 "_blank"
               )
             }}
-            aria-label="Share on Twitter">
-            <FaTwitter size={30} color="#00acee" />
+            aria-label="Share on X (Twitter)">
+            <FaXTwitter size={30} color="#8899ac" />
           </a>
         </div>
         <div className={styles.shareOption}>
