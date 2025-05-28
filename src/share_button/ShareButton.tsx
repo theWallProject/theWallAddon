@@ -1,17 +1,14 @@
-import React, { useState } from "react"
-import {
-  FaFacebook,
-  FaLinkedin,
-  FaTelegram,
-  FaWhatsapp
-} from "react-icons/fa"
-
-import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook"
+import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin"
+import { FaTelegram } from "@react-icons/all-files/fa/FaTelegram"
+import { FaXTwitter } from "@react-icons/all-files/fa/FaXTwitter"
+import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp"
+import React from "react"
 
 import { track } from "~helpers"
 
 // import { share } from "../image_sharing/image"
-import { Button } from "../ui/Button"
+// import { Button } from "../ui/Button"
 import styles from "./ShareButton.module.css"
 
 interface ShareButtonProps {
