@@ -1,6 +1,6 @@
 {
   "name": "@thewall/addon",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "author": "theWall",
   "scripts": {
     "type-check": "tsc --noEmit",
