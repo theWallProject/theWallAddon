@@ -31,6 +31,16 @@ export const Banner = () => {
   const [testResult, setTestResult] =
     useState<MessageResponseMap[MessageTypes.TestUrl]>()
 
+  // Helper function to ensure proper extension URL
+  const getExtensionURL = (importedUrl: string) => {
+    // If it's already a full extension URL, return as is
+    if (importedUrl.startsWith('chrome-extension://') || importedUrl.startsWith('safari-web-extension://')) {
+      return importedUrl
+    }
+    // Otherwise, convert it using chrome.runtime.getURL
+    return chrome.runtime.getURL(importedUrl)
+  }
+
   const onDismissSessionClick = (fileName: string, selector: string) => {
     chrome.runtime.sendMessage<Message>(
       {
@@ -81,7 +91,7 @@ export const Banner = () => {
         className={style.bgLayer}
         style={{
           backgroundColor: "#121212",
-          backgroundImage: `url(${backgroundImage})`
+          backgroundImage: `url(${getExtensionURL(backgroundImage)})`
         }}
       />
       <div
@@ -95,7 +105,7 @@ export const Banner = () => {
         <Scene isSharing={isSharing} isSkipping={isSkipping} />
       </div>
       <img
-        src={theWallWhite}
+        src={getExtensionURL(theWallWhite)}
         className={style.theWallLogo}
         alt="The Wall Logo"
       />
