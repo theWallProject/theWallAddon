@@ -2,6 +2,7 @@ import {
   APIListOfReasons,
   CONFIG,
   DBFileNames,
+  getMainDomain,
   type APIEndpointDomains,
   type APIEndpointDomainsResult
 } from "@theWallProject/addonCommon"
@@ -10,7 +11,7 @@ import FLAGGED_FB from "./db/FLAGGED_FACEBOOK.json"
 import FLAGGED_LI_COMPANY from "./db/FLAGGED_LI_COMPANY.json"
 import FLAGGED_TWITTER from "./db/FLAGGED_TWITTER.json"
 import FLAGGED from "./db/FLAGGED.json"
-import { error, getMainDomain, log } from "./helpers"
+import { error, log } from "./helpers"
 import { getStorageItem } from "./storageHelpers"
 import { type UrlTestResult } from "./types"
 

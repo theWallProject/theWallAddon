@@ -1,10 +1,5 @@
 [
   {
-    "selector": "%20agrox.io",
-    "name": "The Agro Exchange",
-    "reasons": ["h"]
-  },
-  {
     "selector": "0-10s.com",
     "name": "0.10 of a Second",
     "reasons": ["h"]
@@ -11945,7 +11940,7 @@
     "reasons": ["h"]
   },
   {
-    "selector": "Celery.cc",
+    "selector": "celery.cc",
     "name": "Celery",
     "reasons": ["h"]
   },
@@ -17230,7 +17225,7 @@
     "reasons": ["h"]
   },
   {
-    "selector": "Deel.com",
+    "selector": "deel.com",
     "name": "Deel",
     "reasons": ["h"]
   },
@@ -18860,7 +18855,7 @@
     "reasons": ["h"]
   },
   {
-    "selector": "Droxi.ai",
+    "selector": "droxi.ai",
     "name": "Droxi.ai",
     "reasons": ["h"]
   },
@@ -28015,7 +28010,7 @@
     "reasons": ["h"]
   },
   {
-    "selector": "Groove.ooo",
+    "selector": "groove.ooo",
     "name": "Groove",
     "reasons": ["h"]
   },
@@ -33527,11 +33522,6 @@
   {
     "selector": "itsmine.io",
     "name": "ITsMine",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "itunes.apple.com",
-    "name": "Red Alert",
     "reasons": ["h"]
   },
   {
@@ -50252,12 +50242,12 @@
   {
     "selector": "placer.ai",
     "name": "Placer.ai",
-    "reasons": ["f"]
+    "reasons": ["h"]
   },
   {
-    "selector": "Placer.ai",
+    "selector": "placer.ai",
     "name": "Placer.ai",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "placesense.ai",
@@ -63845,7 +63835,7 @@
     "reasons": ["h"]
   },
   {
-    "selector": "Swimm.io",
+    "selector": "swimm.io",
     "name": "Swimm",
     "reasons": ["h"]
   },
