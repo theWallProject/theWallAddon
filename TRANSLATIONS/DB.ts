@@ -30,7 +30,7 @@ export const TRANSLATIONS = {
   },
   extensionDescription: {
     en: `Put more than 19,000 Boycott-worthy companies behind a wall 🧱`,
-    ar: `ضع اكثر من 19 الف شركة للكيان الصهيوني خلف جدار عازل 🧱`,
+    ar: `وضع أكثر من 19 الف شركة للكيان الصهيوني خلف جدار عازل 🧱`,
     id: `Tempatkan lebih dari 19.000 perusahaan layak diboikot di balik tembok 🧱`,
     fr: "Mettre derrière un mur plus de 19 000 entreprises méritant d'être boycottées 🧱",
     nl: "Zet meer dan 19.000 Boycot-waardige bedrijven achter een muur 🧱",
@@ -40,7 +40,7 @@ export const TRANSLATIONS = {
   reasonUrlIL: {
     en: "This Url ends with .il, This means it's an Israeli website!",
     ar: "هذا الموقع من الكيان الصهيوني لأنه ينتهي بـ .il",
-    id: "URL ini diakhiri dengan .il, ini berarti ini adalah situs web Israel!",
+    id: "URL ini diakhiri dengan .il, ini berarti ini adalah situs web Israel !",
     fr: "Cette URL se termine par .il, ce qui signifie qu'il s'agit d'un site web israélien !",
     nl: "Deze Url eindigt op .il, wat betekent dat het een Israëlische website is!",
     zh_CN: "这个网址以.il结尾，这意味着这是一个以色列网站！",
@@ -48,10 +48,10 @@ export const TRANSLATIONS = {
   },
   reasonFounder: {
     en: "One or more founders/investors of $1 are connected to Israel!",
-    ar: "تنبيه: أحد المستثمرين أو المؤسسين لـ $1 من الكيان الصهيوني",
-    id: "Satu atau lebih pendiri/investor $1 terhubung dengan Israel!",
+    ar: "!تنبيه: أحد المستثمرين أو المؤسسين لـ $1 من الكيان الصهيوني",
+    id: "Satu atau lebih pendiri/investor $1 terhubung dengan Israel !",
     fr: "Un ou plusieurs fondateurs/investisseurs de $1 sont liés à Israël !",
-    nl: "Een of meer oprichters/investeerders van $1 hebben banden met Israël!",
+    nl: "Een of meer oprichters/investeerders van $1 hebben banden met Israël !",
     zh_CN: "一个或多个$1的创始人/投资者与以色列有关！",
     zh_TW: "一個或多個$1的創始人/投資者與以色列有關！"
   },
@@ -84,7 +84,7 @@ export const TRANSLATIONS = {
   },
   modalShareButton: {
     en: "Share",
-    ar: "انشر",
+    ar: "أنشر",
     id: "Bagikan",
     fr: "Partager",
     nl: "Delen",
@@ -119,10 +119,10 @@ export const TRANSLATIONS = {
     zh_TW: "支持巴勒斯坦"
   },
   sharingMessageText: {
-    en: 'I avoided an Israeli website by using "The Wall - Boycott assistant" browser addon. Try it!',
-    ar: 'لقد تجنبت موقعًا تابعًا للكيان الصهيوني باستخدام إضافة "الجدار". جرّبه الآن!',
-    id: 'Saya menghindari situs web Israel dengan menggunakan ekstensi browser "The Wall - Asisten Boikot". Cobalah!',
-    fr: "J'ai évité un site web israélien en utilisant le module complémentaire de navigateur « The Wall - Boycott assistant ». Essayez-le!",
+    en: 'I avoided an Israeli website by using "The Wall - Boycott assistant" browser addon. Try it !',
+        ar: 'لقد تجنبت موقعًا تابعًا للكيان الصهيوني باستخدام "الجدار - مساعد المقاطعة". جرّبه الآن !',
+    id: 'Saya menghindari situs web Israel dengan menggunakan ekstensi browser "The Wall - Asisten Boikot". Cobalah !',
+    fr: "J'ai évité un site web israélien en utilisant le module complémentaire de navigateur « The Wall - Boycott assistant ». Essayez-le !",
     nl: 'Ik heb een Israëlische website vermeden door de browser addon "The Wall - Boycott assistant" te gebruiken. Probeer het eens!',
     zh_CN:
       "我通过使用“赛博锡安之壁 - 极端复国主义抵制助手”浏览器插件避免了一个以色列网站。试试看！",
