@@ -47,13 +47,22 @@ export const TRANSLATIONS = {
     zh_TW: "這個網址以.il結尾，這意味著這是一個以色列網站！"
   },
   reasonFounder: {
-    en: "One or more founders/investors of $1 are connected to Israel!",
-    ar: "تنبيه: أحد المستثمرين أو المؤسسين لـ $1 من الكيان الصهيوني",
-    id: "Satu atau lebih pendiri/investor $1 terhubung dengan Israel!",
-    fr: "Un ou plusieurs fondateurs/investisseurs de $1 sont liés à Israël !",
-    nl: "Een of meer oprichters/investeerders van $1 hebben banden met Israël!",
-    zh_CN: "一个或多个$1的创始人/投资者与以色列有关！",
-    zh_TW: "一個或多個$1的創始人/投資者與以色列有關！"
+    en: "One or more founders of $1 are connected to Israel!",
+    ar: "تنبيه: أحد المؤسسين لـ $1 من الكيان الصهيوني",
+    id: "Satu atau lebih pendiri $1 terhubung dengan Israel!",
+    fr: "Un ou plusieurs fondateurs de $1 sont liés à Israël !",
+    nl: "Een of meer oprichters van $1 hebben banden met Israël!",
+    zh_CN: "一个或多个$1的创始人与以色列有关！",
+    zh_TW: "一個或多個$1的創始人與以色列有關！"
+  },
+  reasonInvestor: {
+    en: "One or more investors of $1 are connected to Israel!",
+    ar: "تنبيه: أحد المستثمرين في $1 من الكيان الصهيوني",
+    id: "Satu atau lebih investor $1 terhubung dengan Israel!",
+    fr: "Un ou plusieurs investisseurs de $1 sont liés à Israël !",
+    nl: "Een of meer investeerders van $1 hebben banden met Israël!",
+    zh_CN: "一个或多个$1的投资者与以色列有关！",
+    zh_TW: "一個或多個$1的投資者與以色列有關！"
   },
   reasonHeadquarter: {
     en: "$1 headquarters is in Israel.",

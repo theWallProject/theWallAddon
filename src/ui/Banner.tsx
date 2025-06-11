@@ -34,7 +34,10 @@ export const Banner = () => {
   // Helper function to ensure proper extension URL
   const getExtensionURL = (importedUrl: string) => {
     // If it's already a full extension URL, return as is
-    if (importedUrl.startsWith('chrome-extension://') || importedUrl.startsWith('safari-web-extension://')) {
+    if (
+      importedUrl.startsWith("chrome-extension://") ||
+      importedUrl.startsWith("safari-web-extension://")
+    ) {
       return importedUrl
     }
     // Otherwise, convert it using chrome.runtime.getURL
@@ -83,9 +86,7 @@ export const Banner = () => {
   }, [])
 
   return testResult && !testResult.isDismissed ? (
-    <div
-      className={style.container}
-      dir={chrome.i18n.getMessage("@@bidi_dir")}>
+    <div className={style.container} dir={chrome.i18n.getMessage("@@bidi_dir")}>
       <img src="https://the-wall.win/bg.gif?rec=1&action_name=wall" alt="" />
       <div
         className={style.bgLayer}
@@ -124,6 +125,14 @@ export const Banner = () => {
                   return (
                     <div key={reason}>
                       {chrome.i18n.getMessage("reasonFounder", [
+                        testResult.name
+                      ])}
+                    </div>
+                  )
+                case "i":
+                  return (
+                    <div key={reason}>
+                      {chrome.i18n.getMessage("reasonInvestor", [
                         testResult.name
                       ])}
                     </div>

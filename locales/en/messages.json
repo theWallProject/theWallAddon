@@ -9,7 +9,10 @@
     "message": "This Url ends with .il, This means it's an Israeli website!"
   },
   "reasonFounder": {
-    "message": "One or more founders/investors of $1 are connected to Israel!"
+    "message": "One or more founders of $1 are connected to Israel!"
+  },
+  "reasonInvestor": {
+    "message": "One or more investors of $1 are connected to Israel!"
   },
   "reasonHeadquarter": {
     "message": "$1 headquarters is in Israel."

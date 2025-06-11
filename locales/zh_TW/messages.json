@@ -9,7 +9,10 @@
     "message": "這個網址以.il結尾，這意味著這是一個以色列網站！"
   },
   "reasonFounder": {
-    "message": "一個或多個$1的創始人/投資者與以色列有關！"
+    "message": "一個或多個$1的創始人與以色列有關！"
+  },
+  "reasonInvestor": {
+    "message": "一個或多個$1的投資者與以色列有關！"
   },
   "reasonHeadquarter": {
     "message": "$1總部位於以色列！"

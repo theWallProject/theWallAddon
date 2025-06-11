@@ -9,7 +9,10 @@
     "message": "Deze Url eindigt op .il, wat betekent dat het een Israëlische website is!"
   },
   "reasonFounder": {
-    "message": "Een of meer oprichters/investeerders van $1 hebben banden met Israël!"
+    "message": "Een of meer oprichters van $1 hebben banden met Israël!"
+  },
+  "reasonInvestor": {
+    "message": "Een of meer investeerders van $1 hebben banden met Israël!"
   },
   "reasonHeadquarter": {
     "message": "Het hoofdkantoor van $1 bevindt zich in Israël."

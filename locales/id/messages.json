@@ -9,7 +9,10 @@
     "message": "URL ini diakhiri dengan .il, ini berarti ini adalah situs web Israel!"
   },
   "reasonFounder": {
-    "message": "Satu atau lebih pendiri/investor $1 terhubung dengan Israel!"
+    "message": "Satu atau lebih pendiri $1 terhubung dengan Israel!"
+  },
+  "reasonInvestor": {
+    "message": "Satu atau lebih investor $1 terhubung dengan Israel!"
   },
   "reasonHeadquarter": {
     "message": "Kantor pusat $1 berada di Israel."
