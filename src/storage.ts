@@ -51,7 +51,7 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
   const domain = getMainDomain(url)
 
   if (domain.endsWith(".il")) {
-    const localTestKey = `isr_url_${domain}`
+    const localTestKey = `il_${domain}`
     const isDismissed = await checkIsDissmissed(localTestKey)
 
     return new Promise((resolve) => {
