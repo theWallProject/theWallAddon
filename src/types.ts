@@ -16,7 +16,7 @@ export type UrlTestResult =
       comment?: string
       link?: string
       isDismissed?: boolean
-      rule: { selector: string; db: DBFileNamesValues | "isr_url" }
+      rule: { selector: string; key: "li" | "il" | "fb" | "ws" | "tw" }
     }
   | undefined
 
@@ -31,7 +31,7 @@ export type Message =
     }
   | {
       action: MessageTypes.DissmissUrl
-      fileName: string
+      key: string
       selector: string
     }
 

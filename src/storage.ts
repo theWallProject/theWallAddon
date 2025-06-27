@@ -1,16 +1,12 @@
 import {
   APIListOfReasons,
   CONFIG,
-  DBFileNames,
   getMainDomain,
-  type APIEndpointDomains,
-  type APIEndpointDomainsResult
+  type FinalDBFileType,
+  type SpecialDomains
 } from "@theWallProject/addonCommon"
 
-import FLAGGED_FB from "./db/FLAGGED_FACEBOOK.json"
-import FLAGGED_LI_COMPANY from "./db/FLAGGED_LI_COMPANY.json"
-import FLAGGED_TWITTER from "./db/FLAGGED_TWITTER.json"
-import FLAGGED from "./db/FLAGGED.json"
+import ALL from "./db/ALL.json"
 import { error, log } from "./helpers"
 import { getStorageItem } from "./storageHelpers"
 import { type UrlTestResult } from "./types"
@@ -64,8 +60,8 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
         name: domain,
         reasons: [APIListOfReasons.Url],
         rule: {
-          db: "isr_url",
-          selector: domain
+          selector: domain,
+          key: "il" as const
         }
       })
     })
@@ -75,6 +71,7 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
     const ruleForDomain = CONFIG.rules.find((rule) => {
       const ruleRegex = new RegExp(rule.regex)
       const regexResult = ruleRegex.test(url)
+
       if (regexResult) {
         console.log({ url, rule, regexResult })
       }
@@ -89,7 +86,7 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
       const selector = results && results[1]
 
       if (selector) {
-        const localTestKey = `${ruleForDomain.fileName}_${selector}`
+        const localTestKey = `${getSelectorKey(ruleForDomain.domain)}_${selector}`
 
         const isDismissed = await checkIsDissmissed(localTestKey)
 
@@ -100,42 +97,30 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
             reasons: [],
             name: domain,
             rule: {
-              db: ruleForDomain.fileName,
-              selector
+              selector,
+              key: getSelectorKey(domain as SpecialDomains)
             }
           })
         }
 
         log(`storage: isUrlFlagged testing for id ${selector}`)
-        let findResult: APIEndpointDomainsResult | undefined
+        let findResult: FinalDBFileType | undefined
 
-        let DB: APIEndpointDomains
-        switch (ruleForDomain.fileName) {
-          case "FLAGGED_FACEBOOK":
-            DB = FLAGGED_FB as APIEndpointDomains
-            break
+        const selectorKey = getSelectorKey(ruleForDomain.domain)
 
-          case "FLAGGED_LI_COMPANY":
-            DB = FLAGGED_LI_COMPANY as APIEndpointDomains
-            break
+        findResult = (ALL as FinalDBFileType[]).find(
+          (row) => row[selectorKey] === selector
+        )
 
-          case "FLAGGED_TWITTER":
-            DB = FLAGGED_TWITTER as APIEndpointDomains
-
-            break
-
-          default:
-            throw new Error(`unsupported rule ${ruleForDomain.fileName}`)
-        }
-
-        findResult = DB.find((row) => row.selector === selector)
         log("isUrlFlagged findResult:", findResult)
+
         if (findResult) {
           resolve({
-            ...findResult,
+            reasons: findResult.r,
+            name: findResult.n,
             rule: {
-              db: ruleForDomain.fileName,
-              selector
+              selector,
+              key: getSelectorKey(domain as SpecialDomains)
             }
           })
         } else {
@@ -150,26 +135,44 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
         resolve(undefined)
       }
     } else {
-      const findResult = FLAGGED.find(
-        (row) => row.selector === domain
-      ) as APIEndpointDomainsResult
+      const findResult = (ALL as FinalDBFileType[]).find(
+        (row) => row.ws === domain
+      )
 
       log("storage: isUrlFlagged onsuccess", findResult)
 
       if (findResult) {
-        const localTestKey = `${DBFileNames.FLAGGED}_${domain}`
+        const localTestKey = `ws_${domain}`
 
         const isDismissed = await checkIsDissmissed(localTestKey)
 
         resolve({
           isDismissed,
-          ...findResult,
+          reasons: findResult.r,
+          name: findResult.n,
           rule: {
-            db: "FLAGGED",
-            selector: domain
+            selector: domain,
+            key: "ws" as const
           }
         })
       }
     }
   })
+}
+
+function getSelectorKey(domain: SpecialDomains) {
+  switch (domain) {
+    case "facebook.com":
+      return "fb" as const
+    case "twitter.com":
+    case "x.com":
+      return "tw" as const
+    case "linkedin.com":
+      return "li" as const
+
+    default: {
+      const _exhaustiveCheck: never = domain
+      throw new Error(`getSelectorKey: unexpected domain ${domain}`)
+    }
+  }
 }

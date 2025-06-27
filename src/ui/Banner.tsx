@@ -44,11 +44,11 @@ export const Banner = () => {
     return chrome.runtime.getURL(importedUrl)
   }
 
-  const onDismissSessionClick = (fileName: string, selector: string) => {
+  const onDismissSessionClick = (key: string, selector: string) => {
     chrome.runtime.sendMessage<Message>(
       {
         action: MessageTypes.DissmissUrl,
-        fileName,
+        key,
         selector
       },
       (response: unknown) => {
@@ -176,7 +176,7 @@ export const Banner = () => {
                 track("Button", "Click", "allow_month")
 
                 onDismissSessionClick(
-                  testResult.rule.db,
+                  testResult.rule.key,
                   testResult.rule.selector
                 )
               }}
