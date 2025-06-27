@@ -2,7 +2,7 @@
   display: flex;
   font-family: sans-serif;
   /* font-family: "JimmyCollins", "FFBouya-Normal"; */
-  font-size: 1.5rem;
+  font-size: 24px;
   /* position: fixed; */
   width: 100vw;
   height: 100vh;
@@ -15,7 +15,7 @@
 }
 
 /* .ar {
- font-size: 1rem;
+ font-size: 16px;
 } */
 
 .bgLayer {
@@ -88,14 +88,14 @@
   align-items: center;
   margin-right: 1rem;
   font-family: inherit;
-  font-size: 0.8rem;
+  font-size: 13px;
   transition: box-shadow 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
   display: flex;
   box-shadow: 3px 2px 7px #000000;
   padding: 4px 14px;
 }
 /* .ar .button {
-  font-size: 1rem;
+  font-size: 16px;
 } */
 
 .button:hover {
@@ -110,11 +110,11 @@
 
 @media (min-width: 768px) {
   .container {
-    font-size: 2rem;
+    font-size: 32px;
   }
 
   /* .container.ar {
-    font-size: 2rem;
+    font-size: 23px;
   } */
   .modalContainer {
     min-width: 400px;
@@ -122,16 +122,16 @@
     /* top: 360px; */
   }
   .button {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    font-size: 2.5rem;
+    font-size: 38px;
   }
   /* .container.ar {
-    font-size: 4rem;
+    font-size: 64px;
   } */
   .modalContainer {
     min-width: 500px;
@@ -139,7 +139,7 @@
     /* top: 450px; */
   }
   .button {
-    font-size: 1.6rem;
+    font-size: 25px;
   }
   /* .buttonsWrapper {
     flex-direction: row;
