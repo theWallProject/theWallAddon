@@ -35,6 +35,9 @@
   "modalSupportPalestine": {
     "message": "إدعم فلسطين"
   },
+  "modalShowAlternatives": {
+    "message": "إظهار البدائل"
+  },
   "sharingMessageText": {
     "message": "لقد تجنبت موقعًا تابعًا للكيان الصهيوني باستخدام إضافة \"الجدار\". جرّبه الآن!"
   }

@@ -1,4 +1,8 @@
 declare const styles: {
+  readonly "altLink": string;
+  readonly "altPopupItem": string;
+  readonly "altPopupList": string;
+  readonly "altPopupMenu": string;
   readonly "bgLayer": string;
   readonly "bottomBar": string;
   readonly "button": string;

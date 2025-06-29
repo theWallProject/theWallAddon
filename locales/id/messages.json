@@ -35,6 +35,9 @@
   "modalSupportPalestine": {
     "message": "Dukung Palestina"
   },
+  "modalShowAlternatives": {
+    "message": "Tampilkan Alternatif"
+  },
   "sharingMessageText": {
     "message": "Saya menghindari situs web Israel dengan menggunakan ekstensi browser \"The Wall - Asisten Boikot\". Cobalah!"
   }

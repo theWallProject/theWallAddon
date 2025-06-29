@@ -17,6 +17,7 @@ export type UrlTestResult =
       link?: string
       isDismissed?: boolean
       rule: { selector: string; key: "li" | "il" | "fb" | "ws" | "tw" }
+      alt?: { n: string; ws: string }[]
     }
   | undefined
 

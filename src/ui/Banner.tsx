@@ -27,6 +27,7 @@ const messages = [
 export const Banner = () => {
   const [isSharing, setIsSharing] = useState(false)
   const [isSkipping, setIsSkipping] = useState(false)
+  const [areAlternativesShown, setAreAlternativesShown] = useState(false)
 
   const [testResult, setTestResult] =
     useState<MessageResponseMap[MessageTypes.TestUrl]>()
@@ -169,7 +170,6 @@ export const Banner = () => {
               onMouseEnter={() => setIsSharing(true)}
               onMouseLeave={() => setIsSharing(false)}
             />
-
             <Button
               title={chrome.i18n.getMessage("modalDismissSession")}
               onClick={() => {
@@ -186,22 +186,49 @@ export const Banner = () => {
                 boxShadow: "3px 2px 7px #c72222"
               }}
             />
+            {testResult.alt ? (
+              <Button
+                title={chrome.i18n.getMessage("modalShowAlternatives")}
+                onClick={() => {
+                  track("Button", "Click", "show_alternatives")
+                  setAreAlternativesShown(true)
+                }}
+                onMouseEnter={() => setIsSharing(true)}
+                onMouseLeave={() => setIsSharing(false)}
+                btnStyle={{
+                  boxShadow: "3px 2px 7px #74d136"
+                }}
+              />
+            ) : (
+              <Button
+                title={chrome.i18n.getMessage("modalSupportPalestine")}
+                onClick={() => {
+                  track("Button", "Click", "support_pal")
 
-            <Button
-              title={chrome.i18n.getMessage("modalSupportPalestine")}
-              onClick={() => {
-                track("Button", "Click", "support_pal")
-
-                setTimeout(() => {
-                  window.location.href = "https://techforpalestine.org"
-                }, 500)
-              }}
-              onMouseEnter={() => setIsSharing(true)}
-              onMouseLeave={() => setIsSharing(false)}
-              btnStyle={{
-                boxShadow: "3px 2px 7px #74d136"
-              }}
-            />
+                  setTimeout(() => {
+                    window.location.href = "https://techforpalestine.org"
+                  }, 500)
+                }}
+                onMouseEnter={() => setIsSharing(true)}
+                onMouseLeave={() => setIsSharing(false)}
+                btnStyle={{
+                  boxShadow: "3px 2px 7px #74d136"
+                }}
+              />
+            )}
+            {areAlternativesShown && testResult.alt && (
+              <div className={style.altPopupMenu}>
+                <ul className={style.altPopupList}>
+                  {testResult.alt.map((alt) => (
+                    <li key={alt.ws} className={style.altPopupItem}>
+                      <a href={alt.ws} className={style.altLink}>
+                        {alt.n}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </div>

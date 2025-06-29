@@ -4311,7 +4311,25 @@
     "fb": "AI21Labs",
     "li": "ai21",
     "tw": "AI21Labs",
-    "ws": "ai21.com"
+    "ws": "ai21.com",
+    "alt": [
+      {
+        "n": "Mistral AI",
+        "ws": "https://mistral.ai/"
+      },
+      {
+        "n": "Cohere",
+        "ws": "https://cohere.com/"
+      },
+      {
+        "n": "Aleph Alpha",
+        "ws": "https://www.aleph-alpha.com/"
+      },
+      {
+        "n": "Stability AI",
+        "ws": "https://stability.ai/"
+      }
+    ]
   },
   {
     "id": "aicaption",
@@ -4959,6 +4977,7 @@
     "id": "al-shark-electrode",
     "r": ["h"],
     "n": "AL Shark Electrode",
+    "s": "ELECTRODE",
     "ws": "alshark-co.com"
   },
   {
@@ -9168,6 +9187,7 @@
     "id": "arab-investors",
     "r": ["h"],
     "n": "Arab Investors",
+    "s": "ARAB",
     "ws": "arabinvestors.ps"
   },
   {
@@ -12207,6 +12227,7 @@
     "id": "aviv-arlon",
     "r": ["h"],
     "n": "Aviv Arlon",
+    "s": "AVLN",
     "ws": "avivarlon.com"
   },
   {
@@ -12981,6 +13002,7 @@
     "id": "emblaze",
     "r": ["h"],
     "n": "B.S.D Crown",
+    "s": "BSD",
     "ws": "bsd-c.com"
   },
   {
@@ -21876,6 +21898,7 @@
     "id": "proteo-logics",
     "r": ["h"],
     "n": "Cannomed Medical Cannabis Industries",
+    "s": "CNMD",
     "ws": "cannomed.com"
   },
   {
@@ -23467,6 +23490,7 @@
     "id": "cell-source",
     "r": ["f"],
     "n": "Cell Source",
+    "s": "CLCS",
     "ws": "cell-source.com"
   },
   {
@@ -23518,7 +23542,25 @@
     "fb": "cellebrite",
     "li": "100045",
     "tw": "cellebrite",
-    "ws": "cellebrite.com"
+    "ws": "cellebrite.com",
+    "alt": [
+      {
+        "n": "Oxygen Forensic Suite",
+        "ws": "https://www.oxygenforensics.com/"
+      },
+      {
+        "n": "X-Ways Forensics",
+        "ws": "https://www.x-ways.net/"
+      },
+      {
+        "n": "MSAB XRY",
+        "ws": "https://www.msab.com/"
+      },
+      {
+        "n": "Belkasoft Evidence Center",
+        "ws": "https://belkasoft.com/"
+      }
+    ]
   },
   {
     "id": "cellect-biotechnology",
@@ -31780,6 +31822,7 @@
     "id": "d-pharm-ltd",
     "r": ["h"],
     "n": "D Pharm LTD.",
+    "s": "DPRM",
     "ws": "dpharm.com"
   },
   {
@@ -42057,7 +42100,37 @@
     "fb": "etoro",
     "li": "etoro",
     "tw": "eToro",
-    "ws": "etoro.com"
+    "ws": "etoro.com",
+    "alt": [
+      {
+        "n": "Trading 212",
+        "ws": "https://www.trading212.com/"
+      },
+      {
+        "n": "DEGIRO",
+        "ws": "https://www.degiro.eu/"
+      },
+      {
+        "n": "IG Group",
+        "ws": "https://www.ig.com/"
+      },
+      {
+        "n": "XTB",
+        "ws": "https://www.xtb.com/"
+      },
+      {
+        "n": "Freedom24",
+        "ws": "https://freedom24.com/"
+      },
+      {
+        "n": "Mubasher",
+        "ws": "https://english.mubasher.info/"
+      },
+      {
+        "n": "AZAforex",
+        "ws": "https://www.azaforex.com/"
+      }
+    ]
   },
   {
     "id": "etorox",
@@ -44783,6 +44856,7 @@
     "id": "bynd-beyond-solutions",
     "r": ["h"],
     "n": "Femto Technologies",
+    "s": "BYND",
     "ws": "femtocorp.com"
   },
   {
@@ -51134,6 +51208,7 @@
     "id": "giga-information-group",
     "r": ["f"],
     "n": "Giga Information Group",
+    "s": "GIGX",
     "ws": "gigaweb.com"
   },
   {
@@ -51950,6 +52025,7 @@
     "id": "global-knafaim-leasing",
     "r": ["h"],
     "n": "Global Knafaim Leasing",
+    "s": "GKL",
     "ws": "gkl-leasing.com"
   },
   {
@@ -62267,6 +62343,7 @@
     "id": "inotek-pharmaceuticals",
     "r": ["i"],
     "n": "Inotek Pharmaceuticals",
+    "s": "ITEK",
     "ws": "inotekcorp.com"
   },
   {
@@ -63162,6 +63239,7 @@
     "id": "intercure-inc",
     "r": ["h"],
     "n": "InterCure",
+    "s": "INCR",
     "ws": "intercure.com"
   },
   {
@@ -63275,6 +63353,7 @@
     "id": "internet-gold-golden-lines",
     "r": ["h"],
     "n": "Internet Gold - Golden Lines",
+    "s": "IGLD",
     "ws": "igld.com"
   },
   {
@@ -70999,6 +71078,7 @@
     "id": "lahav",
     "r": ["h"],
     "n": "Lahav",
+    "s": "LAHAV",
     "ws": "lahavgroup.com"
   },
   {
@@ -72393,6 +72473,7 @@
     "id": "lesico-technologies",
     "r": ["h"],
     "n": "Lesico Technologies",
+    "s": "LSCO",
     "ws": "lesico.com"
   },
   {
@@ -76714,6 +76795,7 @@
     "id": "market-tech-holdings",
     "r": ["f"],
     "n": "Market Tech Holdings",
+    "s": "MKT",
     "ws": "market-tech.com"
   },
   {
@@ -77373,6 +77455,7 @@
     "id": "matrix-it",
     "r": ["h"],
     "n": "Matrix IT",
+    "s": "MTRX",
     "ws": "matrix-globalservices.com"
   },
   {
@@ -80107,8 +80190,6 @@
     "id": "metis-technologies",
     "r": ["h"],
     "n": "Metis Technologies",
-    "fb": "vmware",
-    "tw": "VMware",
     "ws": "metistec.com"
   },
   {
@@ -81683,6 +81764,7 @@
     "id": "mishorim",
     "r": ["h"],
     "n": "Mishorim",
+    "s": "MSHR",
     "ws": "mishorim.com"
   },
   {
@@ -82716,7 +82798,37 @@
     "fb": "mondaydotcom",
     "li": "monday.com",
     "tw": "mondaydotcom",
-    "ws": "monday.com"
+    "ws": "monday.com",
+    "alt": [
+      {
+        "n": "Zoho Projects",
+        "ws": "https://www.zoho.com/projects/"
+      },
+      {
+        "n": "OpenProject",
+        "ws": "https://www.openproject.org/"
+      },
+      {
+        "n": "Wrike",
+        "ws": "https://www.wrike.com/"
+      },
+      {
+        "n": "Teamwork",
+        "ws": "https://www.teamwork.com/"
+      },
+      {
+        "n": "Basecamp",
+        "ws": "https://basecamp.com/"
+      },
+      {
+        "n": "Quire",
+        "ws": "https://quire.io/"
+      },
+      {
+        "n": "Bitrix24",
+        "ws": "https://www.bitrix24.com/"
+      }
+    ]
   },
   {
     "id": "monetize-plus",
@@ -88360,7 +88472,25 @@
     "n": "Noma",
     "li": "noma-security",
     "tw": "NomaSecurity",
-    "ws": "noma.security"
+    "ws": "noma.security",
+    "alt": [
+      {
+        "n": "Holistic AI",
+        "ws": "https://www.holisticai.com/"
+      },
+      {
+        "n": "Securiti",
+        "ws": "https://securiti.ai/"
+      },
+      {
+        "n": "Credo AI",
+        "ws": "https://www.credo.ai/"
+      },
+      {
+        "n": "Protect AI",
+        "ws": "https://protectai.com/"
+      }
+    ]
   },
   {
     "id": "nomadigo",
@@ -89607,6 +89737,7 @@
     "id": "objet-geometrics",
     "r": ["h", "i"],
     "n": "Objet Geometries",
+    "s": "SSYS",
     "ws": "stratasys.com"
   },
   {
@@ -103819,6 +103950,7 @@
     "id": "ratio-oil-exploration",
     "r": ["h"],
     "n": "Ratio Energy",
+    "s": "RATI.L",
     "ws": "ratioil.com"
   },
   {
@@ -112440,7 +112572,21 @@
     "n": "Sentra",
     "li": "sentra-io",
     "tw": "sentra_security",
-    "ws": "sentra.io"
+    "ws": "sentra.io",
+    "alt": [
+      {
+        "n": "Securiti",
+        "ws": "https://securiti.ai/"
+      },
+      {
+        "n": "OneTrust",
+        "ws": "https://www.onetrust.com/"
+      },
+      {
+        "n": "Netwrix",
+        "ws": "https://www.netwrix.com/"
+      }
+    ]
   },
   {
     "id": "sentry-parental-control",
@@ -114262,6 +114408,7 @@
     "id": "shoham-business",
     "r": ["h"],
     "n": "Shoham Business",
+    "s": "SHOM",
     "ws": "shohambiz.com"
   },
   {
@@ -115254,7 +115401,21 @@
     "fb": "silverfort",
     "li": "silverfort",
     "tw": "silverfort",
-    "ws": "silverfort.com"
+    "ws": "silverfort.com",
+    "alt": [
+      {
+        "n": "Keycloak",
+        "ws": "https://www.keycloak.org/"
+      },
+      {
+        "n": "BeyondTrust",
+        "ws": "https://www.beyondtrust.com/"
+      },
+      {
+        "n": "One Identity",
+        "ws": "https://www.oneidentity.com/"
+      }
+    ]
   },
   {
     "id": "silverstream-medical",
@@ -119341,7 +119502,17 @@
     "r": ["h"],
     "n": "Speedata",
     "li": "speedataio",
-    "ws": "speedata.io"
+    "ws": "speedata.io",
+    "alt": [
+      {
+        "n": "ARM Neoverse",
+        "ws": "https://www.arm.com/products/silicon-ip-cpu/neoverse/"
+      },
+      {
+        "n": "Xilinx Versal ACAP",
+        "ws": "https://www.xilinx.com/products/silicon-platforms/versal.html"
+      }
+    ]
   },
   {
     "id": "speedsize",
@@ -125505,7 +125676,21 @@
     "fb": "team8group",
     "li": "team8group",
     "tw": "team8group",
-    "ws": "team8.vc"
+    "ws": "team8.vc",
+    "alt": [
+      {
+        "n": "Rocket Internet",
+        "ws": "https://www.rocket-internet.com/"
+      },
+      {
+        "n": "Atomico",
+        "ws": "https://www.atomico.com/"
+      },
+      {
+        "n": "Balderton Capital",
+        "ws": "https://www.balderton.com/"
+      }
+    ]
   },
   {
     "id": "teamalaya",
@@ -130114,7 +130299,21 @@
     "fb": "torqhq",
     "li": "torqio",
     "tw": "torq_io",
-    "ws": "torq.io"
+    "ws": "torq.io",
+    "alt": [
+      {
+        "n": "Tines",
+        "ws": "https://www.tines.com/"
+      },
+      {
+        "n": "D3 Security",
+        "ws": "https://d3security.com/"
+      },
+      {
+        "n": "Swimlane",
+        "ws": "https://swimlane.com/"
+      }
+    ]
   },
   {
     "id": "torr-foodtech",
@@ -130855,6 +131054,7 @@
     "id": "transatlantic-capital-inc",
     "r": ["h"],
     "n": "Transatlantic Capital Inc",
+    "s": "TACI",
     "ws": "transatlanticcapitalgroup.com"
   },
   {
@@ -138442,6 +138642,7 @@
     "id": "BIT_Walkme",
     "r": ["h", "f", "i"],
     "n": "Walkme",
+    "s": "WKME",
     "ws": "walkme.com"
   },
   {
@@ -141026,7 +141227,25 @@
     "fb": "wix",
     "li": "wix-com",
     "tw": "Wix",
-    "ws": "wix.com"
+    "ws": "wix.com",
+    "alt": [
+      {
+        "n": "wuilt",
+        "ws": "https://wuilt.com"
+      },
+      {
+        "n": "JIMDO",
+        "ws": "https://www.jimdo.com"
+      },
+      {
+        "n": "Webnode",
+        "ws": "https://www.webnode.com/"
+      },
+      {
+        "n": "Tilda",
+        "ws": "https://tilda.cc"
+      }
+    ]
   },
   {
     "id": "wix-answers",

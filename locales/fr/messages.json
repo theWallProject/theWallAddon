@@ -35,6 +35,9 @@
   "modalSupportPalestine": {
     "message": "Soutenir la Palestine"
   },
+  "modalShowAlternatives": {
+    "message": "Afficher les alternatives"
+  },
   "sharingMessageText": {
     "message": "J'ai évité un site web israélien en utilisant le module complémentaire de navigateur « The Wall - Boycott assistant ». Essayez-le!"
   }

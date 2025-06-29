@@ -17,7 +17,7 @@
     "package:ff": "plasmo package --target=firefox-mv2",
     "package:edge": "plasmo package --target=edge-mv3",
     "package:opera": "plasmo package --target=opera-mv3",
-    "pre-build": "tcm -p 'src/**/*.css' && npm run trans && npm run type-check",
+    "pre-build": "tcm -p \"src/**/*.css\" && npm run trans && npm run type-check",
     "watch": "tcm -p 'src/**/*.css' -w",
     "nuke": "rm -rf node_modules build .plasmo && npm cache clean --force && npm i",
     "preinstall": "npm install github:theWallProject/addonCommon --force"

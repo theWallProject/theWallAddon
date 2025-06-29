@@ -35,6 +35,9 @@
   "modalSupportPalestine": {
     "message": "Support Palestine"
   },
+  "modalShowAlternatives": {
+    "message": "Show Alternatives"
+  },
   "sharingMessageText": {
     "message": "I avoided an Israeli website by using \"The Wall - Boycott assistant\" browser addon. Try it!"
   }
