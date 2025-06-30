@@ -119,6 +119,7 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
             reasons: findResult.r,
             name: findResult.n,
             alt: findResult.alt,
+            stockSymbol: findResult.s,
             rule: {
               selector,
               key: getSelectorKey(domain as SpecialDomains)
@@ -152,6 +153,7 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
           reasons: findResult.r,
           name: findResult.n,
           alt: findResult.alt,
+          stockSymbol: findResult.s,
           rule: {
             selector: domain,
             key: "ws" as const

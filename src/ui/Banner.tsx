@@ -115,27 +115,25 @@ export const Banner = () => {
         <div className={style.modalMargin}>
           <div className={style.modalContentWrapper}>
             {testResult.reasons.map((reason) => {
+              const companyName = `"${testResult.name}" ${testResult.stockSymbol ? `(${testResult.stockSymbol})` : ""}`
+
               switch (reason) {
                 case "u":
                   return (
                     <div key={reason}>
-                      {chrome.i18n.getMessage("reasonUrlIL", [testResult.name])}
+                      {chrome.i18n.getMessage("reasonUrlIL", [companyName])}
                     </div>
                   )
                 case "f":
                   return (
                     <div key={reason}>
-                      {chrome.i18n.getMessage("reasonFounder", [
-                        testResult.name
-                      ])}
+                      {chrome.i18n.getMessage("reasonFounder", [companyName])}
                     </div>
                   )
                 case "i":
                   return (
                     <div key={reason}>
-                      {chrome.i18n.getMessage("reasonInvestor", [
-                        testResult.name
-                      ])}
+                      {chrome.i18n.getMessage("reasonInvestor", [companyName])}
                     </div>
                   )
                 case "h":
