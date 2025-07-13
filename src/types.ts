@@ -1,7 +1,4 @@
-import type {
-  APIListOfReasonsValues,
-  DBFileNamesValues
-} from "@theWallProject/addonCommon"
+import type { APIListOfReasonsValues } from "@theWallProject/addonCommon"
 
 export enum MessageTypes {
   TestUrl = "TestUrl",
