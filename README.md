@@ -1,3 +1,5 @@
+[![Stand With Gaza](https://raw.githubusercontent.com/standing-humans/StandWithGaza/main/badges/StandWithGaza.svg)](https://standing-humans.github.io/StandWithGaza/)
+
 Welcome to theWall.
 This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
 
@@ -5,6 +7,8 @@ This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with
 
 The plugin is a simple black-list based detector of websites enabeling the worlds worst killing machine - the Israeli government.
 This is not a tool to spread hate, it aims to spread knowledge. Users are free to proceed to those websites after knowing.
+
+[![Stand With Gaza](https://raw.githubusercontent.com/standing-humans/StandWithGaza/main/banner2-direct.svg)](https://standing-humans.github.io/StandWithGaza/)
 
 ## How it works
 
