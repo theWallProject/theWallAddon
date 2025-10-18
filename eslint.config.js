@@ -101,7 +101,35 @@ export default [
         }
       ],
       "import/no-unresolved": "off",
-      "import/no-duplicates": "error"
+      "import/no-duplicates": "error",
+      // Browser Extension specific rules
+      "no-restricted-globals": [
+        "error",
+        {
+          name: "alert",
+          message:
+            "Use console.log or custom logging instead of alert() in browser extensions"
+        }
+      ],
+      "no-restricted-syntax": [
+        "error",
+        {
+          selector: "CallExpression[callee.name='eval']",
+          message:
+            "eval() is not allowed in browser extensions for security reasons"
+        },
+        {
+          selector: "CallExpression[callee.name='Function']",
+          message:
+            "Function constructor is not allowed in browser extensions for security reasons"
+        },
+        {
+          selector:
+            "CallExpression[callee.object.name='chrome'][callee.property.name='tabs'][callee.property.name='executeScript']",
+          message:
+            "Consider using chrome.scripting.executeScript instead of chrome.tabs.executeScript (Manifest V3)"
+        }
+      ]
     }
   },
   {

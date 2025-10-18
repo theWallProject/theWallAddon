@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 
-import { track } from "~helpers"
 
 import backgroundImage from "../../assets/images/flag-bg.jpg"
 import theWallWhite from "../../assets/images/the-wall-white.png"
@@ -8,10 +7,13 @@ import theWallWhite from "../../assets/images/the-wall-white.png"
 // import { share } from "../image_sharing/image"
 import { ShareButton } from "../share_button/ShareButton"
 import { MessageTypes, type Message, type MessageResponseMap } from "../types"
+
 import { Scene } from "./3d/scene"
 import { Button } from "./Button"
 // import { GraffitiEffect } from "./GraffitiEffect"
 import style from "./style.module.css"
+
+import { track } from "~helpers"
 
 export const Banner = () => {
   const [isSharing, setIsSharing] = useState(false)

@@ -83,23 +83,43 @@
 
 ---
 
-## Phase 5: Browser Extension Support (Commit 5)
+## Phase 5: Browser Extension Support (Commit 5) ✅
 
 **Goal**: Add WebExtension specific rules
 
 ### Steps:
 
-1. Install: `npm install eslint-plugin-webextension --save-dev`
-2. Add webextension plugin to `.eslintrc.json`
-3. Add `plugin:webextension/recommended`
-4. Set `"webextensions": true` in env
-5. Test: `npm run lint`
+1. ✅ Research browser extension ESLint plugins
+2. ✅ Add custom browser extension security rules
+3. ✅ Add Chrome API best practices rules
+4. ✅ Configure stricter rules for background scripts
+5. ✅ Add security restrictions (no eval, no Function constructor)
+6. ✅ Add Manifest V3 migration warnings
+7. ✅ Test: `npm run lint`
 
 **Commit**: `feat: add WebExtension ESLint support`
 
 ---
 
-## Phase 6: Prettier Integration (Commit 6)
+## Phase 6: Git Hooks & Build Integration (Commit 6) ✅
+
+**Goal**: Add Git hooks and integrate linting into build process
+
+### Steps:
+
+1. ✅ Install: `npm install husky lint-staged --save-dev`
+2. ✅ Add linting to build command: `npm run lint && npm run pre-build && ...`
+3. ✅ Configure lint-staged for pre-commit hooks
+4. ✅ Create pre-commit hook with linting and type checking
+5. ✅ Create pre-push hook with build validation
+6. ✅ Fix TypeScript error in image sharing
+7. ✅ Test: `npm run build` (includes linting)
+
+**Commit**: `feat: add Git hooks and integrate linting into build process`
+
+---
+
+## Phase 7: Prettier Integration (Commit 7)
 
 **Goal**: Integrate Prettier with ESLint
 

@@ -95,7 +95,7 @@ export const share = async (
 
     // Trigger sharing functionality
     await shareImage(imageDataUrl, title, text)
-  } catch (error) {
-    error("Error generating or sharing the image:", error)
+  } catch (err) {
+    error("Error generating or sharing the image:", err)
   }
 }
