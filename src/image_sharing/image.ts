@@ -1,5 +1,4 @@
 import { error, log } from "../helpers"
-// @ts-expect-error
 import image from "./template.jpg"
 
 // Function to generate image with text overlay
@@ -72,12 +71,12 @@ async function shareImage(imageDataUrl: string, title: string, text: string) {
         title,
         text
       })
-      console.log("Image shared successfully!")
+      log("Image shared successfully!")
     } else {
-      console.error("Sharing is not supported on this browser.")
+      error("Sharing is not supported on this browser.")
     }
-  } catch (error) {
-    console.error("Error sharing the image:", error)
+  } catch (err) {
+    error("Error sharing the image:", err)
   }
 }
 
@@ -96,6 +95,6 @@ export const share = async (
     // Trigger sharing functionality
     await shareImage(imageDataUrl, title, text)
   } catch (error) {
-    console.error("Error generating or sharing the image:", error)
+    error("Error generating or sharing the image:", error)
   }
 }

@@ -1,8 +1,6 @@
 import { Canvas } from "@react-three/fiber"
-import React, { useEffect, useRef } from "react"
+import React, { useRef } from "react"
 import { Group, Vector3 } from "three"
-
-import { log, warn } from "~helpers"
 
 import { LoveEmojiObj } from "./LoveEmojiObj"
 import { ScreamEmojiObj } from "./ScreamEmojiObj"
@@ -10,7 +8,6 @@ import { WallObj } from "./WallObj"
 
 const GROUP_POS = new Vector3(0, 0, 0)
 const GROUP_SCALE = new Vector3(1, 1, 1)
-const SCALE_MULTIPLIER = 0.001
 
 const Scene = ({
   isSharing,

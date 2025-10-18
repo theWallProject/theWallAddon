@@ -37,7 +37,7 @@ const checkIsDissmissed = async (testKey: string) => {
     } else {
       isDismissed = false
     }
-  } catch (e) {
+  } catch {
     error(`isUrlFlagged getStorageItem failed for key ${testKey}`)
     isDismissed = false
   }
@@ -67,100 +67,101 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
     })
   }
 
-  return new Promise(async (resolve, reject) => {
-    const ruleForDomain = CONFIG.rules.find((rule) => {
-      const ruleRegex = new RegExp(rule.regex)
-      const regexResult = ruleRegex.test(url)
+  return new Promise((resolve) => {
+    const executeAsync = async () => {
+      const ruleForDomain = CONFIG.rules.find((rule) => {
+        const ruleRegex = new RegExp(rule.regex)
+        const regexResult = ruleRegex.test(url)
 
-      if (regexResult) {
-        console.log({ url, rule, regexResult })
-      }
-      return regexResult
-    })
-
-    if (ruleForDomain) {
-      log("storage: isUrlFlagged [rule]", { ruleForDomain })
-
-      const regex = new RegExp(ruleForDomain.regex)
-      const results = regex.exec(url)
-      const selector = results && results[1]
-
-      if (selector) {
-        const localTestKey = `${getSelectorKey(ruleForDomain.domain)}_${selector}`
-
-        const isDismissed = await checkIsDissmissed(localTestKey)
-
-        if (isDismissed) {
-          resolve({
-            isDismissed: true,
-            // reasons and name dont matter here
-            reasons: [],
-            name: domain,
-            rule: {
-              selector,
-              key: getSelectorKey(domain as SpecialDomains)
-            }
-          })
+        if (regexResult) {
+          log({ url, rule, regexResult })
         }
+        return regexResult
+      })
 
-        log(`storage: isUrlFlagged testing for id ${selector}`)
-        let findResult: FinalDBFileType | undefined
+      if (ruleForDomain) {
+        log("storage: isUrlFlagged [rule]", { ruleForDomain })
 
-        const selectorKey = getSelectorKey(ruleForDomain.domain)
+        const regex = new RegExp(ruleForDomain.regex)
+        const results = regex.exec(url)
+        const selector = results && results[1]
 
-        findResult = (ALL as FinalDBFileType[]).find(
-          (row) => row[selectorKey] === selector
+        if (selector) {
+          const localTestKey = `${getSelectorKey(ruleForDomain.domain)}_${selector}`
+
+          const isDismissed = await checkIsDissmissed(localTestKey)
+
+          if (isDismissed) {
+            resolve({
+              isDismissed: true,
+              // reasons and name dont matter here
+              reasons: [],
+              name: domain,
+              rule: {
+                selector,
+                key: getSelectorKey(domain as SpecialDomains)
+              }
+            })
+          }
+
+          log(`storage: isUrlFlagged testing for id ${selector}`)
+          const selectorKey = getSelectorKey(ruleForDomain.domain)
+
+          const findResult = (ALL as FinalDBFileType[]).find(
+            (row) => row[selectorKey] === selector
+          )
+
+          log("isUrlFlagged findResult:", findResult)
+
+          if (findResult) {
+            resolve({
+              reasons: findResult.r,
+              name: findResult.n,
+              alt: findResult.alt,
+              stockSymbol: findResult.s,
+              rule: {
+                selector,
+                key: getSelectorKey(domain as SpecialDomains)
+              }
+            })
+          } else {
+            resolve(undefined)
+          }
+        } else {
+          log("storage: isUrlFlagged [rule] no result!!", {
+            ruleForDomain,
+            regex
+          })
+
+          resolve(undefined)
+        }
+      } else {
+        const findResult = (ALL as FinalDBFileType[]).find(
+          (row) => row.ws === domain
         )
 
-        log("isUrlFlagged findResult:", findResult)
+        log("storage: isUrlFlagged onsuccess", findResult)
 
         if (findResult) {
+          const localTestKey = `ws_${domain}`
+
+          const isDismissed = await checkIsDissmissed(localTestKey)
+
           resolve({
+            isDismissed,
             reasons: findResult.r,
             name: findResult.n,
             alt: findResult.alt,
             stockSymbol: findResult.s,
             rule: {
-              selector,
-              key: getSelectorKey(domain as SpecialDomains)
+              selector: domain,
+              key: "ws" as const
             }
           })
-        } else {
-          resolve(undefined)
         }
-      } else {
-        log("storage: isUrlFlagged [rule] no result!!", {
-          ruleForDomain,
-          regex
-        })
-
-        resolve(undefined)
-      }
-    } else {
-      const findResult = (ALL as FinalDBFileType[]).find(
-        (row) => row.ws === domain
-      )
-
-      log("storage: isUrlFlagged onsuccess", findResult)
-
-      if (findResult) {
-        const localTestKey = `ws_${domain}`
-
-        const isDismissed = await checkIsDissmissed(localTestKey)
-
-        resolve({
-          isDismissed,
-          reasons: findResult.r,
-          name: findResult.n,
-          alt: findResult.alt,
-          stockSymbol: findResult.s,
-          rule: {
-            selector: domain,
-            key: "ws" as const
-          }
-        })
       }
     }
+    executeAsync()
   })
 }
 
@@ -175,7 +176,6 @@ function getSelectorKey(domain: SpecialDomains) {
       return "li" as const
 
     default: {
-      const _exhaustiveCheck: never = domain
       throw new Error(`getSelectorKey: unexpected domain ${domain}`)
     }
   }

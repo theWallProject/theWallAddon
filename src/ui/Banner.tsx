@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react"
 
 import { track } from "~helpers"
 
-// @ts-expect-error
+// @ts-expect-error - JPG import not recognized by TypeScript
 import backgroundImage from "../../assets/images/flag-bg.jpg"
-// @ts-expect-error
+// @ts-expect-error - PNG import not recognized by TypeScript
 import theWallWhite from "../../assets/images/the-wall-white.png"
 // import { log, warn } from "../helpers"
 // import { share } from "../image_sharing/image"
@@ -44,7 +44,7 @@ export const Banner = () => {
         key,
         selector
       },
-      (response: unknown) => {
+      () => {
         // log("onDismissSessionClick: Response from background:", response)
         setTimeout(() => {
           setTestResult(undefined)

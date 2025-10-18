@@ -10,7 +10,7 @@ import {
   type SendResponse
 } from "./types"
 
-chrome.runtime.onInstalled.addListener((details) => {
+chrome.runtime.onInstalled.addListener(() => {
   log("background:runtime.onInstalled")
   chrome.storage.session.clear(() => {
     log("cleared session [onInstalled]...")
@@ -57,7 +57,7 @@ function isSpecialUrl(url: string) {
     const parsedUrl = new URL(url) // Parse the URL to extract its protocol
     // Return true if the protocol is not http or https
     return parsedUrl.protocol !== "http:" && parsedUrl.protocol !== "https:"
-  } catch (error) {
+  } catch {
     // If the URL is invalid (e.g., null, undefined), treat it as special
     return true
   }

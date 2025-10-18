@@ -46,7 +46,8 @@ export const TextScramble: React.FC<TextScrambleProps> = ({
     const frame = frameRef.current
 
     for (let i = 0; i < queue.length; i++) {
-      let { from, to, start, end, char } = queue[i]
+      const { from, to, start, end } = queue[i]
+      let { char } = queue[i]
 
       if (frame >= end) {
         complete++

@@ -20,7 +20,9 @@
     "pre-build": "tcm -p \"src/**/*.css\" && npm run trans && npm run type-check",
     "watch": "tcm -p 'src/**/*.css' -w",
     "nuke": "rm -rf node_modules build .plasmo && npm cache clean --force && npm i",
-    "preinstall": "npm install github:theWallProject/addonCommon --force"
+    "preinstall": "npm install github:theWallProject/addonCommon --force",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx && echo '✅ ESLint: No issues found!'",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix"
   },
   "type": "module",
   "dependencies": {
@@ -42,7 +44,10 @@
     "@types/node": "20.11.5",
     "@types/react": "18.3.17",
     "@types/react-dom": "18.3.5",
+    "@typescript-eslint/eslint-plugin": "^8.46.1",
+    "@typescript-eslint/parser": "^8.46.1",
     "archiver": "^7.0.1",
+    "eslint": "^9.37.0",
     "plasmo": "^0.90.5",
     "prettier": "3.5.3",
     "ts-node": "^10.9.2",

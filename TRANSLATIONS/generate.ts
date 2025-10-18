@@ -20,7 +20,7 @@ const deleteFolderRecursive = async (folderPath: string) => {
     try {
       await rm(folderPath, { recursive: true, force: true })
       console.log(`Deleted folder: ${folderPath}`)
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error(`Error deleting folder: ${err}`)
     }
   }
