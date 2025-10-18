@@ -1,10 +1,10 @@
 {
   "name": "@thewall/addon",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "author": "theWall",
   "scripts": {
     "type-check": "tsc --noEmit",
-    "trans": "node --loader ts-node/esm TRANSLATIONS/generate.ts",
+    "trans": "npx tsx TRANSLATIONS/generate.ts",
     "dev": "npm run pre-build && plasmo dev",
     "build": "npm run pre-build && npm run build:chrome && npm run build:ff && npm run build:edge && npm run build:opera && npm run build:ff-src",
     "build:chrome": "plasmo build --no-minify",

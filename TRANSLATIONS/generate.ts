@@ -1,4 +1,5 @@
-import * as fs from "fs"
+import { existsSync } from "fs"
+import { mkdir, rm, writeFile } from "fs/promises"
 import * as path from "path"
 
 import { TRANSLATIONS } from "./DB.ts"
@@ -7,27 +8,31 @@ import { TRANSLATIONS } from "./DB.ts"
 const outputDir = "./locales"
 
 // Ensure output directories exist
-const ensureDirExists = (dirPath: string) => {
-  if (!fs.existsSync(dirPath)) {
-    fs.mkdirSync(dirPath, { recursive: true })
+const ensureDirExists = async (dirPath: string) => {
+  if (!existsSync(dirPath)) {
+    await mkdir(dirPath, { recursive: true })
   }
 }
 
 // Delete the locales folder if it exists
-const deleteFolderRecursive = (folderPath: string) => {
-  if (fs.existsSync(folderPath)) {
-    fs.rmSync(folderPath, { recursive: true, force: true })
-    console.log(`Deleted folder: ${folderPath}`)
+const deleteFolderRecursive = async (folderPath: string) => {
+  if (existsSync(folderPath)) {
+    try {
+      await rm(folderPath, { recursive: true, force: true })
+      console.log(`Deleted folder: ${folderPath}`)
+    } catch (err: any) {
+      console.error(`Error deleting folder: ${err}`)
+    }
   }
 }
 
 // Generate the locale files
-const generateLocaleFiles = (
+const generateLocaleFiles = async (
   translations: Record<string, Record<string, string>>
 ) => {
   const languages = Object.keys(translations[Object.keys(translations)[0]])
 
-  languages.forEach((lang) => {
+  for (const lang of languages) {
     const messages: Record<string, { message: string }> = {}
 
     for (const [key, translationsForKey] of Object.entries(translations)) {
@@ -35,14 +40,18 @@ const generateLocaleFiles = (
     }
 
     const langDir = path.join(outputDir, lang)
-    ensureDirExists(langDir)
+    await ensureDirExists(langDir)
 
     const filePath = path.join(langDir, "messages.json")
-    fs.writeFileSync(filePath, JSON.stringify(messages, null, 2), "utf-8")
+    await writeFile(filePath, JSON.stringify(messages, null, 2), "utf-8")
     console.log(`Generated: ${filePath}`)
-  })
+  }
 }
 
 // Execute the generation
-deleteFolderRecursive(outputDir)
-generateLocaleFiles(TRANSLATIONS)
+const main = async () => {
+  await deleteFolderRecursive(outputDir)
+  await generateLocaleFiles(TRANSLATIONS)
+}
+
+main().catch(console.error)

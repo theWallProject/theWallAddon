@@ -99,13 +99,35 @@
   display: flex;
   box-shadow: 3px 2px 7px #000000;
   padding: 4px 14px;
+  position: relative;
+  overflow: hidden;
 }
 /* .ar .button {
   font-size: 16px;
 } */
 
 .button:hover {
-  box-shadow: 8px 8px 14px red;
+  box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+  transition: all 0.3s ease;
+  background: linear-gradient(
+    90deg,
+    #252525,
+    rgba(255, 255, 255, 0.1),
+    #252525
+  );
+  background-size: 200% 100%;
+  background-position: -200% 0;
+  animation: shimmer 0.8s ease-out;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 .bottomBar {

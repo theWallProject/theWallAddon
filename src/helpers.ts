@@ -23,6 +23,7 @@ export type TR_ACTION = "Click"
 export type TR_NAME =
   | "allow_month"
   | "support_pal"
+  | "support_ko_fi"
   | "show_alternatives"
   | "report_mistake"
   | "share_fb"

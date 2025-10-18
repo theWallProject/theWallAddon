@@ -52,9 +52,10 @@
   display: flex;
 }
 
-/* .shareOption a:hover {
-  background-color: #5e5e5e;
-} */
+.shareOption a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+}
 
 .shareOption svg {
   transition: transform 0.3s ease;

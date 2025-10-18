@@ -1,0 +1,44 @@
+{
+  "extensionName": {
+    "message": "The Wall - Pembantu Boikot"
+  },
+  "extensionDescription": {
+    "message": "19,000 lebih perusahaan layak diboikot di sebalik tembok 🧱"
+  },
+  "reasonUrlIL": {
+    "message": "URL ini diakhiri dengan .il, ini bermakna ini adalah laman web Israel!"
+  },
+  "reasonFounder": {
+    "message": "Satu atau lebih pengasas terhubung $1 dengan Israel!"
+  },
+  "reasonInvestor": {
+    "message": "Satu atau lebih pelabur terhubung $1 dengan Israel!"
+  },
+  "reasonHeadquarter": {
+    "message": "Ibu pejabat $1 berada di Israel."
+  },
+  "reasonBDS": {
+    "message": "$1 terdaftar dalam daftar Boikot BDS"
+  },
+  "modalShareMobileImage": {
+    "message": "Kongsi imej"
+  },
+  "modalShareButton": {
+    "message": "Kongsi"
+  },
+  "buttomBarButtonReport": {
+    "message": "Laporkan kesalahan"
+  },
+  "modalDismissSession": {
+    "message": "Izinkan selama sebulan"
+  },
+  "modalSupportPalestine": {
+    "message": "Sokong Palestina"
+  },
+  "modalShowAlternatives": {
+    "message": "Tunjukkan Alternatif"
+  },
+  "sharingMessageText": {
+    "message": "Saya menghindari laman web Israel dengan menggunakan extension browser \"The Wall - Asisten Boikot\". Coba!"
+  }
+}

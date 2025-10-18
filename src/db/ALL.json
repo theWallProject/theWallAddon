@@ -34,7 +34,6 @@
       "f"
     ],
     "n": "01 Founders",
-    "li": "01-founders",
     "ws": "01founders.co"
   },
   {
@@ -10918,15 +10917,6 @@
     "n": "Applied mezo systems",
     "li": "28861310",
     "ws": "appliedmezosystems.com"
-  },
-  {
-    "id": "applied-research-institute-jerusalem",
-    "r": [
-      "h"
-    ],
-    "n": "Applied Research Institute Jerusalem",
-    "li": "arij",
-    "ws": "arij.org"
   },
   {
     "id": "applied-technologic-services",
@@ -84149,6 +84139,22 @@
     "ws": "jedsec.com"
   },
   {
+    "id": "s_li_Jedyapps_0",
+    "r": [
+      "h"
+    ],
+    "n": "Jedyapps",
+    "li": "jedyapps"
+  },
+  {
+    "id": "s_ws_Jedyapps_0",
+    "r": [
+      "h"
+    ],
+    "n": "Jedyapps",
+    "ws": "jedyapps.com"
+  },
+  {
     "id": "jeen-ai",
     "r": [
       "h"
@@ -139309,17 +139315,6 @@
     "li": "sightvision-ltd"
   },
   {
-    "id": "sajilni",
-    "r": [
-      "f"
-    ],
-    "n": "Sajilni",
-    "fb": "sajilni",
-    "li": "sajilni",
-    "tw": "Sajilni",
-    "ws": "sajilni.com"
-  },
-  {
     "id": "sal-kniyot",
     "r": [
       "h"
@@ -179657,6 +179652,10 @@
       {
         "n": "Boon Digital Solutions",
         "ws": "https://boondigitalsolutions.com"
+      },
+      {
+        "n": "Sndian",
+        "ws": "https://sndian.com"
       },
       {
         "n": "wuilt",

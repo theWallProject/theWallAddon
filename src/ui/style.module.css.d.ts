@@ -11,6 +11,7 @@ declare const styles: {
   readonly "modalContainer": string;
   readonly "modalContentWrapper": string;
   readonly "modalMargin": string;
+  readonly "shimmer": string;
   readonly "theWallLogo": string;
 };
 export = styles;
