@@ -40,5 +40,8 @@
   },
   "sharingMessageText": {
     "message": "Saya menghindari situs web Israel dengan menggunakan ekstensi browser \"The Wall - Asisten Boikot\". Cobalah!"
+  },
+  "modalDonateButton": {
+    "message": "Donasi untuk memperkuat tembok 🧱"
   }
 }

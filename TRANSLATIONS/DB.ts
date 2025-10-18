@@ -178,15 +178,15 @@ export const TRANSLATIONS = {
       '我通過使用"賽博錫安之墻 - 極端復國主義抵製助手"瀏覽器插件避免了一個以色列網站。試試看！'
   },
   modalDonateButton: {
-    en: "Donate to make the wall stronger",
-    ar: "تبرع لجعل الجدار أقوى",
-    id: "Donasi untuk memperkuat tembok",
-    ms: "Derma untuk menguatkan tembok",
-    bn: "প্রাচীরকে শক্তিশালী করতে দান করুন",
-    fr: "Faire un don pour renforcer le mur",
-    nl: "Doneer om de muur sterker te maken",
-    zh_CN: "捐款让墙更坚固",
-    zh_TW: "捐款讓牆更堅固"
+    en: "Donate to make the wall stronger 🧱",
+    ar: "تبرع لجعل الجدار أقوى 🧱",
+    id: "Donasi untuk memperkuat tembok 🧱",
+    ms: "Derma untuk menguatkan tembok 🧱",
+    bn: "প্রাচীরকে শক্তিশালী করতে দান করুন 🧱",
+    fr: "Faire un don pour renforcer le mur 🧱",
+    nl: "Doneer om de muur sterker te maken 🧱",
+    zh_CN: "捐款让墙更坚固 🧱",
+    zh_TW: "捐款讓牆更堅固 🧱"
   }
 } satisfies TransDB
 

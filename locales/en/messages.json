@@ -40,5 +40,8 @@
   },
   "sharingMessageText": {
     "message": "I avoided an Israeli website by using \"The Wall - Boycott assistant\" browser addon. Try it!"
+  },
+  "modalDonateButton": {
+    "message": "Donate to make the wall stronger 🧱"
   }
 }

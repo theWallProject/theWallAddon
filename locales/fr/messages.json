@@ -40,5 +40,8 @@
   },
   "sharingMessageText": {
     "message": "J'ai évité un site web israélien en utilisant le module complémentaire de navigateur « The Wall - Boycott assistant ». Essayez-le!"
+  },
+  "modalDonateButton": {
+    "message": "Faire un don pour renforcer le mur 🧱"
   }
 }
