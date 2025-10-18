@@ -4,11 +4,12 @@ import { FaTelegram } from "@react-icons/all-files/fa/FaTelegram"
 import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp"
 import React from "react"
 
+import styles from "./ShareButton.module.css"
+
 import { track } from "~helpers"
 
 // import { share } from "../image_sharing/image"
 // import { Button } from "../ui/Button"
-import styles from "./ShareButton.module.css"
 
 interface ShareButtonProps {
   text: string

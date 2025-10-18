@@ -1,4 +1,5 @@
 import { error, log } from "../helpers"
+
 import image from "./template.jpg"
 
 // Function to generate image with text overlay

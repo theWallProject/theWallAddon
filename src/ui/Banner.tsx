@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react"
 
 import { track } from "~helpers"
 
-// @ts-expect-error - JPG import not recognized by TypeScript
 import backgroundImage from "../../assets/images/flag-bg.jpg"
-// @ts-expect-error - PNG import not recognized by TypeScript
 import theWallWhite from "../../assets/images/the-wall-white.png"
 // import { log, warn } from "../helpers"
 // import { share } from "../image_sharing/image"
@@ -13,7 +11,6 @@ import { MessageTypes, type Message, type MessageResponseMap } from "../types"
 import { Scene } from "./3d/scene"
 import { Button } from "./Button"
 // import { GraffitiEffect } from "./GraffitiEffect"
-
 import style from "./style.module.css"
 
 export const Banner = () => {

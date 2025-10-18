@@ -36,38 +36,48 @@
 3. ✅ Add `@typescript-eslint/recommended` rules
 4. ✅ Test: `npm run lint`
 5. ✅ Fix build file ignoring issue
+6. ✅ Remove all unused variables carefully
+7. ✅ Replace console statements with log functions
+8. ✅ Fix async promise executor issue
+9. ✅ Add proper TypeScript error descriptions
+10. ✅ Create image type declarations
+11. ✅ Configure no-console exceptions for helpers and generate files
+12. ✅ Add success message to lint command
 
-**Commit**: `feat: add TypeScript ESLint support`
+**Commit**: `feat: add TypeScript ESLint support and fix all linting issues`
 
 ---
 
-## Phase 3: React Support (Commit 3)
+## Phase 3: React Support (Commit 3) ✅
 
 **Goal**: Add React linting rules
 
 ### Steps:
 
-1. Install: `npm install eslint-plugin-react eslint-plugin-react-hooks --save-dev`
-2. Add React plugins to `.eslintrc.json`
-3. Add `plugin:react/recommended` and `plugin:react-hooks/recommended`
-4. Set `"react/react-in-jsx-scope": "off"` (React 17+)
-5. Test: `npm run lint`
+1. ✅ Install: `npm install eslint-plugin-react eslint-plugin-react-hooks --save-dev`
+2. ✅ Add React plugins to `eslint.config.js`
+3. ✅ Add `react/recommended` and `react-hooks/recommended` rules
+4. ✅ Configure React settings (version detection)
+5. ✅ Disable overly strict rules for Three.js/React Three Fiber
+6. ✅ Test: `npm run lint`
 
 **Commit**: `feat: add React ESLint support`
 
 ---
 
-## Phase 4: Import Management (Commit 4)
+## Phase 4: Import Management (Commit 4) ✅
 
 **Goal**: Organize and validate imports
 
 ### Steps:
 
-1. Install: `npm install eslint-plugin-import --save-dev`
-2. Add import plugin to `.eslintrc.json`
-3. Add `plugin:import/recommended` and `plugin:import/typescript`
-4. Configure TypeScript resolver in settings
-5. Test: `npm run lint`
+1. ✅ Install: `npm install eslint-plugin-import --save-dev`
+2. ✅ Add import plugin to `eslint.config.js`
+3. ✅ Add `import/order` rule for consistent import ordering
+4. ✅ Add `import/no-duplicates` for duplicate imports
+5. ✅ Configure import grouping and alphabetization
+6. ✅ Fix import ordering issues automatically
+7. ✅ Test: `npm run lint`
 
 **Commit**: `feat: add import management ESLint rules`
 

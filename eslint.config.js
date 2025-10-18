@@ -1,6 +1,9 @@
 import js from "@eslint/js"
 import tseslint from "@typescript-eslint/eslint-plugin"
 import tsparser from "@typescript-eslint/parser"
+import importPlugin from "eslint-plugin-import"
+import react from "eslint-plugin-react"
+import reactHooks from "eslint-plugin-react-hooks"
 
 export default [
   // Ignore patterns
@@ -55,15 +58,50 @@ export default [
       }
     },
     plugins: {
-      "@typescript-eslint": tseslint
+      "@typescript-eslint": tseslint,
+      react: react,
+      "react-hooks": reactHooks,
+      import: importPlugin
+    },
+    settings: {
+      react: {
+        version: "detect"
+      }
     },
     rules: {
       ...tseslint.configs.recommended.rules,
+      ...react.configs.recommended.rules,
+      ...reactHooks.configs.recommended.rules,
       "@typescript-eslint/no-unused-vars": "error",
       "@typescript-eslint/no-explicit-any": "warn",
       "no-console": "warn",
       "prefer-const": "error",
-      "no-var": "error"
+      "no-var": "error",
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off",
+      "react/no-unknown-property": "off",
+      "react-hooks/refs": "off",
+      "react-hooks/purity": "off",
+      "import/order": [
+        "error",
+        {
+          groups: [
+            "builtin",
+            "external",
+            "internal",
+            "parent",
+            "sibling",
+            "index"
+          ],
+          "newlines-between": "always",
+          alphabetize: {
+            order: "asc",
+            caseInsensitive: true
+          }
+        }
+      ],
+      "import/no-unresolved": "off",
+      "import/no-duplicates": "error"
     }
   },
   {
@@ -76,6 +114,12 @@ export default [
     files: ["TRANSLATIONS/generate.ts"],
     rules: {
       "no-console": "off"
+    }
+  },
+  {
+    files: ["src/ui/TextScramble.tsx"],
+    rules: {
+      "react-hooks/exhaustive-deps": "off"
     }
   }
 ]
