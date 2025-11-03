@@ -150,7 +150,7 @@ chrome.tabs.onActivated.addListener((activeInfo) => {
       // Otherwise, wait for it to finish loading
       const onUpdatedListener = async (
         tabId: number,
-        changeInfo: chrome.tabs.TabChangeInfo,
+        changeInfo: chrome.tabs.OnUpdatedInfo,
         tab: chrome.tabs.Tab
       ) => {
         log(`chrome.tabs.onActivated onUpdatedListener`, {

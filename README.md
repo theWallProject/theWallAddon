@@ -10,7 +10,7 @@ This is not a tool to spread hate, it aims to spread knowledge. Users are free t
 
 The plugin checks the URL of the current tab against a verified list of domains. If the domain is found in the list, the plugin displays a popup.
 
-For most domains, a simple check against the domain is enough. However, for "special" websites like Facebook, LinkedIn and Twitter. We check page Ids.
+For most domains, a simple check against the domain is enough. However, for "special" websites like Facebook, LinkedIn, Twitter, Instagram, and GitHub. We check page Ids.
 The source of this data is crunchbase so it's 100% accurate.
 
 ## Getting Started

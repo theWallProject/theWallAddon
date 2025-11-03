@@ -69,12 +69,15 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
 
   return new Promise((resolve) => {
     const executeAsync = async () => {
+      // Normalize URL by removing www. prefix for regex matching
+      const normalizedUrl = url.replace(/^(https?:\/\/)www\./i, "$1")
+
       const ruleForDomain = CONFIG.rules.find((rule) => {
         const ruleRegex = new RegExp(rule.regex)
-        const regexResult = ruleRegex.test(url)
+        const regexResult = ruleRegex.test(normalizedUrl)
 
         if (regexResult) {
-          log({ url, rule, regexResult })
+          log({ url, normalizedUrl, rule, regexResult })
         }
         return regexResult
       })
@@ -83,7 +86,7 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
         log("storage: isUrlFlagged [rule]", { ruleForDomain })
 
         const regex = new RegExp(ruleForDomain.regex)
-        const results = regex.exec(url)
+        const results = regex.exec(normalizedUrl)
         const selector = results && results[1]
 
         if (selector) {
@@ -174,6 +177,10 @@ function getSelectorKey(domain: SpecialDomains) {
       return "tw" as const
     case "linkedin.com":
       return "li" as const
+    case "instagram.com":
+      return "ig" as const
+    case "github.com":
+      return "gh" as const
 
     default: {
       throw new Error(`getSelectorKey: unexpected domain ${domain}`)
