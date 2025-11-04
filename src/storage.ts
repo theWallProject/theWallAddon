@@ -90,7 +90,11 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
         const selector = results && results[1]
 
         if (selector) {
-          const localTestKey = `${getSelectorKey(ruleForDomain.domain)}_${selector}`
+          const selectorKey = getSelectorKey(
+            ruleForDomain.domain,
+            normalizedUrl
+          )
+          const localTestKey = `${selectorKey}_${selector}`
 
           const isDismissed = await checkIsDissmissed(localTestKey)
 
@@ -102,13 +106,12 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
               name: domain,
               rule: {
                 selector,
-                key: getSelectorKey(domain as SpecialDomains)
+                key: getSelectorKey(ruleForDomain.domain, normalizedUrl)
               }
             })
           }
 
           log(`storage: isUrlFlagged testing for id ${selector}`)
-          const selectorKey = getSelectorKey(ruleForDomain.domain)
 
           const findResult = (ALL as FinalDBFileType[]).find(
             (row) => row[selectorKey] === selector
@@ -124,7 +127,7 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
               stockSymbol: findResult.s,
               rule: {
                 selector,
-                key: getSelectorKey(domain as SpecialDomains)
+                key: getSelectorKey(ruleForDomain.domain, normalizedUrl)
               }
             })
           } else {
@@ -168,7 +171,7 @@ export const isUrlFlagged = async (url: string): Promise<UrlTestResult> => {
   })
 }
 
-function getSelectorKey(domain: SpecialDomains) {
+function getSelectorKey(domain: SpecialDomains, url?: string) {
   switch (domain) {
     case "facebook.com":
       return "fb" as const
@@ -181,6 +184,23 @@ function getSelectorKey(domain: SpecialDomains) {
       return "ig" as const
     case "github.com":
       return "gh" as const
+    case "youtube.com": {
+      // Determine if it's a Profile (@) or Channel (/channel/) URL
+      // Check the URL directly - Profile URLs have /@, Channel URLs have /channel/
+      if (!url) {
+        throw new Error(
+          `getSelectorKey: url is required for youtube.com domain`
+        )
+      }
+      if (url.includes("/channel/")) {
+        return "ytc" as const
+      }
+      if (url.includes("/@")) {
+        return "ytp" as const
+      }
+      // Default to ytp for other YouTube URLs (shouldn't happen with proper rules)
+      return "ytp" as const
+    }
 
     default: {
       throw new Error(`getSelectorKey: unexpected domain ${domain}`)

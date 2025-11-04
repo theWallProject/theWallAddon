@@ -4327,7 +4327,10 @@
     "gh": "AI21Labs",
     "ig": "wordtune_official",
     "li": "ai21",
+    "tt": "@wordtune_official",
     "tw": "AI21Labs",
+    "ytc": "UCDQlFKBK11jIxm4iVymoAtA",
+    "ytp": "@ai21labs",
     "ws": "ai21.com",
     "alt": [
       {
@@ -23692,6 +23695,7 @@
     "fb": "cellebritedigitalintelligence",
     "li": "cellebrite",
     "tw": "cellebrite",
+    "ytp": "@cellebrite",
     "ws": "cellebrite.com",
     "alt": [
       {
@@ -23717,6 +23721,42 @@
     "r": ["h"],
     "n": "Cellebrite",
     "li": "100045"
+  },
+  {
+    "id": "cellebrite_manual_ytp_@cellebrite-deutsch",
+    "r": ["h"],
+    "n": "Cellebrite",
+    "ytp": "@cellebrite-deutsch"
+  },
+  {
+    "id": "cellebrite_manual_ytp_@cellebrite-espanol",
+    "r": ["h"],
+    "n": "Cellebrite",
+    "ytp": "@cellebrite-espanol"
+  },
+  {
+    "id": "cellebrite_manual_ytp_@cellebrite-francais",
+    "r": ["h"],
+    "n": "Cellebrite",
+    "ytp": "@cellebrite-francais"
+  },
+  {
+    "id": "cellebrite_manual_ytp_@cellebrite-portugues",
+    "r": ["h"],
+    "n": "Cellebrite",
+    "ytp": "@cellebrite-portugues"
+  },
+  {
+    "id": "cellebrite_manual_ytp_@companycellebrite",
+    "r": ["h"],
+    "n": "Cellebrite",
+    "ytp": "@companycellebrite"
+  },
+  {
+    "id": "cellebrite_manual_ytp_@lifeatcellebrite7735",
+    "r": ["h"],
+    "n": "Cellebrite",
+    "ytp": "@lifeatcellebrite7735"
   },
   {
     "id": "cellect-biotechnology",
@@ -28308,7 +28348,6 @@
     "id": "withconfetti",
     "r": ["f", "i"],
     "n": "Confetti",
-    "fb": "eventswithconfetti",
     "li": "withconfetti",
     "tw": "withconfetti",
     "ws": "withconfetti.com"
@@ -31662,6 +31701,8 @@
     "n": "Cyera",
     "li": "cyera",
     "tw": "cyera_io",
+    "ytc": "UCQZhCZIe6xRDjCkfzzwPBCg",
+    "ytp": "@CyeraSecurity",
     "ws": "cyera.com"
   },
   {
@@ -40450,6 +40491,7 @@
     "fb": "empathyforfamilies",
     "ig": "empathy_com",
     "li": "empathy-com",
+    "th": "@empathy_com",
     "tw": "empathy",
     "ws": "empathy.com"
   },
@@ -42338,7 +42380,10 @@
     "fb": "eToroDEofficial",
     "ig": "etoro_italia",
     "li": "etoro",
+    "th": "@etoro_official",
+    "tt": "@etoro_official",
     "tw": "eToroES",
+    "ytp": "@etoro",
     "ws": "etoro.com",
     "alt": [
       {
@@ -42406,6 +42451,42 @@
     "r": ["h"],
     "n": "eToro",
     "tw": "eToroItalia"
+  },
+  {
+    "id": "etoro_manual_ytp_@eToroItalia",
+    "r": ["h"],
+    "n": "eToro",
+    "ytp": "@eToroItalia"
+  },
+  {
+    "id": "etoro_manual_ytp_@eToroAR",
+    "r": ["h"],
+    "n": "eToro",
+    "ytp": "@eToroAR"
+  },
+  {
+    "id": "etoro_manual_ytp_@eToro_ES",
+    "r": ["h"],
+    "n": "eToro",
+    "ytp": "@eToro_ES"
+  },
+  {
+    "id": "etoro_manual_ytp_@eToroDE",
+    "r": ["h"],
+    "n": "eToro",
+    "ytp": "@eToroDE"
+  },
+  {
+    "id": "etoro_manual_ytp_@etorofrance877",
+    "r": ["h"],
+    "n": "eToro",
+    "ytp": "@etorofrance877"
+  },
+  {
+    "id": "etoro_manual_ytp_eToroDeutsch",
+    "r": ["h"],
+    "n": "eToro",
+    "ytp": "eToroDeutsch"
   },
   {
     "id": "etoro_manual_ws_etoropartners_com",
@@ -63486,8 +63567,7 @@
     "r": ["h"],
     "n": "Intentia",
     "fb": "716497805077521",
-    "li": "intentia-israel",
-    "tw": "intentiaerp"
+    "li": "intentia-israel"
   },
   {
     "id": "inter-industries",
@@ -83257,7 +83337,11 @@
     "fb": "mondaydotcom",
     "ig": "mondaydotcom",
     "li": "mondaydotcom",
+    "th": "@mondaydotcom",
+    "tt": "@mondayinsights",
     "tw": "mondaydotcom",
+    "ytc": "UCA9UvBiKHly15rN8u_Km3BQ",
+    "ytp": "@mondaydotcom",
     "ws": "monday.com",
     "alt": [
       {
@@ -83319,6 +83403,24 @@
     "r": ["h"],
     "n": "monday.com",
     "tw": "mondaysupport"
+  },
+  {
+    "id": "mondaydotcom_manual_ytp_@mastering-monday",
+    "r": ["h"],
+    "n": "monday.com",
+    "ytp": "@mastering-monday"
+  },
+  {
+    "id": "mondaydotcom_manual_ytp_@mondayappdeveloper",
+    "r": ["h"],
+    "n": "monday.com",
+    "ytp": "@mondayappdeveloper"
+  },
+  {
+    "id": "mondaydotcom_manual_ytp_@tryvechannel",
+    "r": ["h"],
+    "n": "monday.com",
+    "ytp": "@tryvechannel"
   },
   {
     "id": "mondaydotcom_manual_ws_mondayert_org",
@@ -83613,7 +83715,10 @@
     "fb": "officialmoonpay",
     "ig": "moonpay",
     "li": "moonpay",
+    "th": "@moonpay",
     "tw": "moonpay",
+    "ytc": "UC9hQtWpGGNaZ8yiwFsBkRBg",
+    "ytp": "@moonpayhq",
     "ws": "moonpay.com"
   },
   {
@@ -86542,7 +86647,11 @@
     "fb": "globaltoloka",
     "gh": "Toloka",
     "ig": "avride.ai",
+    "th": "@tripleten.tech",
+    "tt": "@tripleten.tech",
     "tw": "TripleTenTech",
+    "ytc": "UCGvsgFPVyOwuN8aJJbMem9A",
+    "ytp": "@TripleTenTech",
     "ws": "nebius.com"
   },
   {
@@ -86598,6 +86707,42 @@
     "r": ["f"],
     "n": "Nebius Group",
     "tw": "tractoai"
+  },
+  {
+    "id": "nebius-group_manual_ytc_UCCIwsFWZNuugtW1U2X89t7A",
+    "r": ["f"],
+    "n": "Nebius Group",
+    "ytc": "UCCIwsFWZNuugtW1U2X89t7A"
+  },
+  {
+    "id": "nebius-group_manual_ytp_@nebiusofficial",
+    "r": ["f"],
+    "n": "Nebius Group",
+    "ytp": "@nebiusofficial"
+  },
+  {
+    "id": "nebius-group_manual_ytp_@TolokaAi",
+    "r": ["f"],
+    "n": "Nebius Group",
+    "ytp": "@TolokaAi"
+  },
+  {
+    "id": "nebius-group_manual_ws_toloka_ai",
+    "r": ["f"],
+    "n": "Nebius Group",
+    "ws": "toloka.ai"
+  },
+  {
+    "id": "nebius-group_manual_ws_tracto_ai",
+    "r": ["f"],
+    "n": "Nebius Group",
+    "ws": "tracto.ai"
+  },
+  {
+    "id": "nebius-group_manual_ws_tripleten_com",
+    "r": ["f"],
+    "n": "Nebius Group",
+    "ws": "tripleten.com"
   },
   {
     "id": "neboola",
@@ -91256,7 +91401,14 @@
     "ig": "omadahealth",
     "li": "omada-health",
     "tw": "omadahealth",
+    "ytp": "@Omadahealth",
     "ws": "omadahealth.com"
+  },
+  {
+    "id": "omada-health_manual_ytp_omadahealth",
+    "r": ["i"],
+    "n": "Omada Health",
+    "ytp": "omadahealth"
   },
   {
     "id": "omaiko",
@@ -101785,6 +101937,7 @@
     "gh": "protectai",
     "li": "protect-ai",
     "tw": "protectaicorp",
+    "ytp": "@protectai",
     "ws": "protectai.com"
   },
   {
@@ -111918,7 +112071,6 @@
     "r": ["h"],
     "n": "SearchShops",
     "fb": "www.searchshops",
-    "tw": "searchshops_com",
     "ws": "searchshops.com"
   },
   {
@@ -112872,7 +113024,10 @@
     "fb": "semperistech",
     "ig": "hipconf",
     "li": "hybrid-identity-protection-conference",
+    "th": "@semperistech",
     "tw": "hipconf",
+    "ytc": "UCycrWXhxOTaUQ0sidlyN9SA",
+    "ytp": "@semperistech",
     "ws": "hipconf.com"
   },
   {
@@ -113294,6 +113449,8 @@
     "gh": "Sentinel-One",
     "li": "sentinelone-dach",
     "tw": "SentinelOne",
+    "ytc": "UCm-vzfQy1lNglsXRBY6Vu5w",
+    "ytp": "@Sentinelone-inc",
     "ws": "sentinelone.com"
   },
   {
@@ -113321,6 +113478,7 @@
     "gh": "sentraio",
     "li": "sentra-io",
     "tw": "sentra_security",
+    "ytp": "@sentra_security",
     "ws": "sentra.io",
     "alt": [
       {
@@ -116168,6 +116326,7 @@
     "ig": "life_at_silverfort",
     "li": "silverfort",
     "tw": "silverfort",
+    "ytp": "@silverfort",
     "ws": "silverfort.com",
     "alt": [
       {
@@ -120286,6 +120445,7 @@
     "fb": "speedata.io",
     "gh": "Speedata-io",
     "li": "speedataio",
+    "ytp": "@Speedata-io",
     "ws": "speedata.io",
     "alt": [
       {
@@ -130570,12 +130730,6 @@
     "li": "tollman's"
   },
   {
-    "id": "toloka-5e39",
-    "r": ["f"],
-    "n": "Toloka",
-    "ws": "toloka.ai"
-  },
-  {
     "id": "tolstoy-5881",
     "r": ["h"],
     "n": "Tolstoy",
@@ -131128,7 +131282,9 @@
     "gh": "torqio",
     "ig": "torq_io",
     "li": "torqio",
+    "tt": "@torq.io",
     "tw": "torq_io",
+    "ytp": "@torq_io",
     "ws": "torq.io",
     "alt": [
       {
@@ -136221,7 +136377,14 @@
     "gh": "vast-data",
     "li": "vast-data",
     "tw": "VAST_data",
+    "ytp": "vastdata",
     "ws": "vastdata.com"
+  },
+  {
+    "id": "vast-data_manual_ytp_@VASTData",
+    "r": ["f", "i"],
+    "n": "VAST Data",
+    "ytp": "@VASTData"
   },
   {
     "id": "vastpoint",

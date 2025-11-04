@@ -13,7 +13,10 @@ export type UrlTestResult =
       comment?: string
       link?: string
       isDismissed?: boolean
-      rule: { selector: string; key: "li" | "il" | "fb" | "ws" | "tw" | "ig" | "gh" }
+      rule: {
+        selector: string
+        key: "li" | "il" | "fb" | "ws" | "tw" | "ig" | "gh" | "ytp" | "ytc"
+      }
       alt?: { n: string; ws: string }[]
       stockSymbol?: string
     }
