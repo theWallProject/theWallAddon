@@ -15,7 +15,7 @@ export type UrlTestResult =
       isDismissed?: boolean
       rule: {
         selector: string
-        key: "li" | "il" | "fb" | "ws" | "tw" | "ig" | "gh" | "ytp" | "ytc"
+        key: "li" | "il" | "fb" | "ws" | "tw" | "ig" | "gh" | "ytp" | "ytc" | "tt" | "th"
       }
       alt?: { n: string; ws: string }[]
       stockSymbol?: string

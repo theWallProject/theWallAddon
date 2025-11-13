@@ -201,6 +201,10 @@ function getSelectorKey(domain: SpecialDomains, url?: string) {
       // Default to ytp for other YouTube URLs (shouldn't happen with proper rules)
       return "ytp" as const
     }
+    case "tiktok.com":
+      return "tt" as const
+    case "threads.com":
+      return "th" as const
 
     default: {
       throw new Error(`getSelectorKey: unexpected domain ${domain}`)
